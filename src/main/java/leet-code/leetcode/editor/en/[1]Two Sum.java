@@ -1,5 +1,5 @@
-//Given an array of integers nums and an integer target, return indices of the t
-//wo numbers such that they add up to target. 
+//Given an array of integers nums and an integer target, return indices
+// of the two numbers such that they add up to target.
 //
 // You may assume that each input would have exactly one solution, and you may n
 //ot use the same element twice. 
@@ -42,10 +42,30 @@
 // 👍 19311 👎 687
 
 
+
+import java.util.HashMap;
+import java.util.Map;
+
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        
+        int len = nums.length;
+        int [] ret = new int[2];
+        //key = number value, value = number index
+        Map<Integer, Integer> numberMap = new HashMap<>();
+        for(int i=0; i<len; i++) {
+            int key = target - nums[i];
+            if (numberMap.containsKey(key)) {
+                ret[0]= numberMap.get(key);
+                ret[1]=i;
+                break;
+            } else {
+                numberMap.put(nums[i], i);
+            }
+
+        }
+
+        return ret;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
