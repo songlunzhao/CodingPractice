@@ -56,25 +56,7 @@ import java.io.Serializable;
  * }
  */
 class Solution {
-//    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-//        ListNode dummyHead = new ListNode(0);
-//        ListNode p = l1, q = l2, curr = dummyHead;
-//        int carry = 0;
-//        while (p != null || q != null) {
-//            int x = (p != null) ? p.val : 0;
-//            int y = (q != null) ? q.val : 0;
-//            int sum = carry + x + y;
-//            carry = sum / 10;
-//            curr.next = new ListNode(sum % 10);
-//            curr = curr.next;
-//            if (p != null) p = p.next;
-//            if (q != null) q = q.next;
-//        }
-//        if (carry > 0) {
-//            curr.next = new ListNode(carry);
-//        }
-//        return dummyHead.next;
-//    }
+
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(0);
         ListNode p=l1 , q=l2, current=head;
@@ -120,21 +102,5 @@ class Solution {
     }
 
 }
-//class ListNode  implements Serializable {
-//    int val;
-//    ListNode next;
-//    public ListNode(int i) {
-//        val=i;
-//    }
-//    @Override
-//    public String toString() {
-//        String output = "[" + val;
-//        while(next!=null){
-//            output=output+","+next.val;
-//            next=next.next;
-//        }
-//        output=output+"]";
-//        return output;
-//    }
-//}
+
 //leetcode submit region end(Prohibit modification and deletion)
