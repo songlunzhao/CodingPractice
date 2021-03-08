@@ -58,13 +58,13 @@ class Solution {
         if(x<0 || x%10==0){
             return false;
         }
-        int revNumber=0;
-        while(x>=10){
-            int i = x%10;
+        int revNumber=0, i=0;
+        while(x!=0){
+            i = x%10;
             revNumber=revNumber*10 + i;
             x=x/10;
         }
-        revNumber=revNumber*10 + x;
+        //revNumber=revNumber*10 + x;
         return revNumber==input;
     }
 }
