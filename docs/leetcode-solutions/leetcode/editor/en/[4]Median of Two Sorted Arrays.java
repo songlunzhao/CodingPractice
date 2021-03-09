@@ -60,6 +60,7 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        //merge 2 arrays into 1 then find median of the merged array
         int [] merge = new int[nums1.length+nums2.length];
         int i=0,j=0,k=0;
         while(i< nums1.length && j<nums2.length){
