@@ -2,53 +2,42 @@ import org.testng.annotations.Test;
 
 import java.util.Stack;
 
+import static org.testng.Assert.assertEquals;
+
 public class LongestValidParenthesesTest {
 
     @Test
     public void testLongestValidParentheses(){
         //")()())" expect 4
+        //Wrong Answer: input:")()())" Output:2 Expected:4
+        //Wrong Answer: input:"()(()" Output:4 Expected:2
+        //Wrong Answer: input:"()(())" Output:2 Expected:6
+        int ret = longestValidParentheses(")()())");
+        assertEquals(ret, 4);
+        ret = longestValidParentheses("()(()");
+        assertEquals(ret, 2);
+        ret = longestValidParentheses("()(())");//this test case need index to calculate
+        assertEquals(ret, 6);
     }
 
     public int longestValidParentheses(String s) {
-        int max=0;
-        Stack<Character> stack = new Stack<>();
-        if(s.length()<=1) return 0;
-        stack.push(s.charAt(0));
-        int len=0;
-        for(int i=1; i<s.length(); i++){
-            if(stack.isEmpty()){
-                stack.push(s.charAt(i));
-                if(len>max){
-                    max=len;
-                    len=0;
-                }
-                continue;
-            }
-            if(s.charAt(i)=='(') {
-                stack.push(s.charAt(i));
-                if(len>max){
-                    max=len;
-                    len=0;
-                }
+        int maxans = 0;
+        Stack<Integer> stack = new Stack<>();
+        stack.push(-1);
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
+                stack.push(i);
             } else {
-                //current is )
-                if(stack.peek()==')'){
-                    //previous is )
-                    stack.push(s.charAt(i));
-                    if(len>max){
-                        max=len;
-                        len=0;
-                    }
+                stack.pop();
+                if (stack.empty()) {
+                    stack.push(i);
                 } else {
-                    stack.pop();
-                    len=len+2;
-                    if(len>max){
-                        max=len;
-                    }
+                    maxans = Math.max(maxans, i - stack.peek());
                 }
             }
         }
-        if(len>max) max=len;
-        return max;
+        return maxans;
     }
+
+
 }

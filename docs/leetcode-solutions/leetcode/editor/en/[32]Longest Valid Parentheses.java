@@ -39,45 +39,45 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int longestValidParentheses(String s) {
-        int max=0;
-        Stack<Character> stack = new Stack<>();
-        if(s.length()<=1) return 0;
-        stack.push(s.charAt(0));
-        int len=0;
-        for(int i=1; i<s.length(); i++){
-            if(stack.isEmpty()){
-                stack.push(s.charAt(i));
-                if(len>max){
-                    max=len;
-                    len=0;
-                }
-                continue;
-            }
-            if(s.charAt(i)=='(') {
-                stack.push(s.charAt(i));
-                if(len>max){
-                    max=len;
-                    len=0;
-                }
+        int maxans = 0;
+        Stack<Integer> stack = new Stack<>();
+        stack.push(-1);
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
+                stack.push(i);
             } else {
-                //current is )
-                if(stack.peek()==')'){
-                    //previous is )
-                    stack.push(s.charAt(i));
-                    if(len>max){
-                        max=len;
-                        len=0;
-                    }
+                stack.pop();
+                if (stack.empty()) {
+                    stack.push(i);
                 } else {
-                    stack.pop();
-                    len=len+2;
-                    if(len>max){
-                        max=len;
-                    }
+                    maxans = Math.max(maxans, i - stack.peek());
                 }
             }
         }
-        if(len>max) max=len;
-        return max;    }
+        return maxans;
+    }
+
+    private int getMaxlen(Stack<Character> stack){
+        boolean right=true;
+        int len = 0;
+        while (!stack.isEmpty()){
+            char c = stack.pop();
+            if(right){
+                if(c==')'){
+                    right=false;
+                } else {
+                    break;
+                }
+            } else {
+                if(c=='('){
+                    len=len+2;
+                    right=true;
+                } else {
+                    break;
+                }
+            }
+        }
+        return len;
+    }
 }
 //leetcode submit region end(Prohibit modification and deletion)

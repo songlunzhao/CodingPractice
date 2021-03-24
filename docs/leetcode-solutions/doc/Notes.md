@@ -56,3 +56,6 @@
     from   v$sql
     where  sql_text like '%MY_TEST_QUERY%'
     and    sql_text not like '%v$sql%';
+    
+# Unix commands
+    ps -ef, ipconfig, netstate
