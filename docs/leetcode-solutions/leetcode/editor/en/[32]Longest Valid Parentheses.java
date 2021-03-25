@@ -37,6 +37,13 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+
+/**
+ * because this question wants to return length,
+ * push index into queue makes it much more convinent
+ * to calculate length, compared to count how many parentheses
+ * are popped up.
+ */
 class Solution {
     public int longestValidParentheses(String s) {
         int maxans = 0;
