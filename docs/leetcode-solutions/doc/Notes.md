@@ -59,3 +59,10 @@
     
 # Unix commands
     ps -ef, ipconfig, netstate
+    
+# popular technologies
+  Facebook Cassandra -- non sql db
+  Apache Kafka -- messaging queue, software bus using stream-processing
+  Apache Hadoop -- distributed big data system, map-reduce
+  Apache Cassandra is a NoSQL database ideal for high-speed, online transactional data, 
+  while Hadoop is a big data analytics system that focuses on data warehousing and data lake use cases
