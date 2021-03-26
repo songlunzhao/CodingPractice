@@ -64,15 +64,26 @@ class Solution {
         if(lists==null || lists.length==0) return null;
         ListNode head=new ListNode(Integer.MAX_VALUE);
         ListNode tail=head;
-        ListNode lastList;
-        while(true){
-            Object[] ret=getMinNode(lists);
-            if(ret==null) break;
-            tail.next=(ListNode)ret[0];
-            tail=tail.next;
-            if((Boolean) ret[1]){
-                break;
+//        while(true){
+//            Object[] ret=getMinNode(lists);
+//            if(ret==null) break;
+//            tail.next=(ListNode)ret[0];
+//            tail=tail.next;
+//            if((Boolean) ret[1]){
+//                break;
+//            }
+//        }
+        PriorityQueue<ListNode> q = new PriorityQueue(lists.length, new ListNodeComparator());
+        for (int i = 0; i < lists.length; i++) {
+            if (lists[i] != null) {
+                q.add(lists[i]); // add first Node of each list to queue
             }
+        }
+        while(!q.isEmpty()){
+            tail.next=q.poll();
+            tail=tail.next;
+            if(tail.next!=null)
+                q.add(tail.next);
         }
         return head.next;
     }
@@ -110,5 +121,18 @@ class Solution {
             ret[1]=Boolean.FALSE;
         return ret;
     }
+
+    class ListNodeComparator implements Comparator<ListNode> {
+
+        @Override
+        public int compare(ListNode o1, ListNode o2) {
+            if(o1==null || o2==null){
+                return 0;
+            }
+            return o1.val-o2.val;
+        }
+
+    }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
