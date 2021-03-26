@@ -82,13 +82,16 @@ public class MergeTwoListTest {
         PriorityQueue<ListNode> q = new PriorityQueue(lists.length, new ListNodeComparator());
         for (int i = 0; i < lists.length; i++) {
             if (lists[i] != null) {
-                q.add(lists[i]); // add first Node of each list to queue
+                // add first Node of each list to queue
+                // make sure not adding null to queue
+                q.add(lists[i]);
             }
         }
         while (!q.isEmpty()) {
             tail.next = q.poll();
             tail = tail.next;
             if (tail.next != null)
+                // make sure not adding null to queue
                 q.add(tail.next);
         }
         return head.next;
