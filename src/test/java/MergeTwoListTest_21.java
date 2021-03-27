@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class MergeTwoListTest {
+public class MergeTwoListTest_21 {
 
     @Test
     public void testMergeTwoLists() {

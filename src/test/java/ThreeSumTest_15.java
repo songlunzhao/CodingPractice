@@ -6,7 +6,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class ThreeSumTest {
+public class ThreeSumTest_15 {
 
     @Test
     public void testThreeSum() {

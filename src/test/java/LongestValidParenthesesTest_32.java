@@ -4,7 +4,7 @@ import java.util.Stack;
 
 import static org.testng.Assert.assertEquals;
 
-public class LongestValidParenthesesTest {
+public class LongestValidParenthesesTest_32 {
 
     @Test
     public void testLongestValidParentheses(){

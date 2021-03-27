@@ -2,7 +2,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class PalindromeNumberTest {
+public class PalindromeNumberTest_9 {
 
 
     @Test

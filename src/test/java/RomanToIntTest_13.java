@@ -6,7 +6,7 @@ import java.util.Stack;
 
 import static org.testng.Assert.assertEquals;
 
-public class RomanToIntTest {
+public class RomanToIntTest_13 {
 
     @Test
     public void testRomanToInt(){

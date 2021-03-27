@@ -1,4 +1,4 @@
-public class LengthOfLastWordTest {
+public class LengthOfLastWordTest_58 {
 
     public int lengthOfLastWord(String s) {
         if(s==null || s.length()==0) return 0;

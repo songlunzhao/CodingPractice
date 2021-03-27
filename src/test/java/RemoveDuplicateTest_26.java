@@ -2,7 +2,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class RemoveDuplicateTest {
+public class RemoveDuplicateTest_26 {
 
     @Test
     public void testRemoveDuplicates() {

@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 
-public class LFUCacheTest {
+public class LFUCacheTest_460 {
 
     class LFUCache {
 

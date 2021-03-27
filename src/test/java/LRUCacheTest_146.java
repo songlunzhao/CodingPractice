@@ -5,7 +5,7 @@ import java.util.Map;
 
 import static org.testng.Assert.assertEquals;
 
-public class LRUCacheTest {
+public class LRUCacheTest_146 {
 
     @Test
     public void testLRUCache(){

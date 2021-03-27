@@ -4,7 +4,7 @@ import java.util.*;
 
 import static org.testng.Assert.assertEquals;
 
-public class WordLadderTest {
+public class WordLadderTest_127 {
     //Wrong Answer: input:"a" "c" ["a","b","c"] Output:1 Expected:2 stdout:
     //Wrong Answer: input:"hit" "cog" ["hot","dot","dog","lot","log","cog"] Output:6 Expected:5 stdout:
 
