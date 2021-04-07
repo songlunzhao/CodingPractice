@@ -1,12 +1,13 @@
-//Given the root of a binary tree, return the level order traversal of its nodes
-//' values. (i.e., from left to right, level by level). 
+//Given the root of a binary tree, return the bottom-up level order traversal of
+// its nodes' values. (i.e., from left to right, level by level from leaf to root)
+//. 
 //
 // 
 // Example 1: 
 //
 // 
 //Input: root = [3,9,20,null,null,15,7]
-//Output: [[3],[9,20],[15,7]]
+//Output: [[15,7],[9,20],[3]]
 // 
 //
 // Example 2: 
@@ -31,7 +32,7 @@
 // -1000 <= Node.val <= 1000 
 // 
 // Related Topics Tree Breadth-first Search 
-// 👍 4423 👎 104
+// 👍 2089 👎 245
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
@@ -51,14 +52,19 @@
  * }
  */
 class Solution {
-    public List<List<Integer>> levelOrder(TreeNode root) {
+
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         Queue<TreeNode> q = new LinkedList<>();
         if(root!=null){
             q.add(root);
             levelOrder(result,q);
         }
-        return result;
+        List<List<Integer>> r = new ArrayList<>();
+        for(int i=result.size()-1; i>=0; i--){
+            r.add(result.get(i));
+        }
+        return r;
     }
 
     private void levelOrder(List<List<Integer>>result, Queue<TreeNode> queue) {
