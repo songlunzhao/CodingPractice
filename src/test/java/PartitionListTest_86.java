@@ -1,3 +1,4 @@
+import common.ListNode;
 import org.testng.annotations.Test;
 
 public class PartitionListTest_86 {
@@ -14,10 +15,10 @@ public class PartitionListTest_86 {
     }
 
     private void runTest(Integer[] input, int x){
-        ListNode inputHead = buildList(input);
-        printQueue(inputHead);
+        ListNode inputHead = ListNode.buildList(input);
+        ListNode.printQueue(inputHead);
         ListNode head = partition(inputHead, x);
-        printQueue(head);
+        ListNode.printQueue(head);
     }
     public ListNode partition(ListNode head, int x) {
         if (head == null || head.next == null) return head;
@@ -54,40 +55,4 @@ public class PartitionListTest_86 {
         return head;
     }
 
-    class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
-    private ListNode buildList(Integer[] input) {
-        ListNode head = new ListNode();
-        ListNode cur = head;
-        for (int i : input) {
-            ListNode c = new ListNode(i);
-            cur.next = c;
-            cur = cur.next;
-        }
-        return head.next;
-    }
-
-    private void printQueue(ListNode head) {
-        ListNode cur = head;
-        while (cur != null) {
-            System.out.print(cur.val + " ");
-            cur = cur.next;
-        }
-        System.out.println();
-    }
 }
