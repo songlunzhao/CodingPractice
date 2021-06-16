@@ -66,7 +66,44 @@
  */
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
-        
+        if(head==null||head.next==null||k<=1) return head;
+        ListNode start=head, end, cur=head, prevEnd=null;
+        int i=0;
+        while(cur!=null){
+            i++;
+            if(i==k){
+                end=cur; //reverse sub-k list
+                ListNode newStart=end.next;
+                reverseBetween(start,end);//start->end reversed to start<-end
+                start.next=newStart;
+                if(start==head) {
+                    head=end;
+                }
+                if(prevEnd!=null){
+                    prevEnd.next=end;
+                }
+                prevEnd=start;
+                start=newStart;
+                i=0;
+                cur=start;
+            } else {
+                cur=cur.next;
+            }
+
+        }
+        return head;
+    }
+
+    private void reverseBetween(ListNode start, ListNode end ) {
+        if(start==null || start.next==null || start==end) return;
+        ListNode p=start, q=start.next, r;
+        while(p!=end && q!=null){
+            r=q.next;
+            q.next=p;
+            p=q;
+            q=r;
+        }
+        return;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
