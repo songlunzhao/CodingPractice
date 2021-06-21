@@ -1,8 +1,7 @@
-import common.ListNode;
-import common.ListNodeComparator;
+import com.songlunzhao.leetcode.editor.en.common.ListNode;
+import com.songlunzhao.leetcode.editor.en.common.ListNodeComparator;
 import org.testng.annotations.Test;
 
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class MergeTwoListTest_21 {

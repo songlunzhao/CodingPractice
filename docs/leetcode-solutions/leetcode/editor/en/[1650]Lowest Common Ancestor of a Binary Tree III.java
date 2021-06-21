@@ -1,4 +1,4 @@
-//Given two nodes of a binary tree p and q, return their lowest common ancestor 
+//Given two nodes of a binary tree p and q, return their lowest com.songlunzhao.leetcode.editor.en.common ancestor
 //(LCA). 
 //
 // Each node will have a reference to its parent node. The definition for Node i
@@ -13,7 +13,7 @@
 //}
 // 
 //
-// According to the definition of LCA on Wikipedia: "The lowest common ancestor 
+// According to the definition of LCA on Wikipedia: "The lowest com.songlunzhao.leetcode.editor.en.common ancestor
 //of two nodes p and q in a tree T is the lowest node that has both p and q as des
 //cendants (where we allow a node to be a descendant of itself)." 
 //

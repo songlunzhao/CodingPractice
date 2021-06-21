@@ -3,7 +3,7 @@
 //re emails representing emails of the account. 
 //
 // Now, we would like to merge these accounts. Two accounts definitely belong to
-// the same person if there is some common email to both accounts. Note that even 
+// the same person if there is some com.songlunzhao.leetcode.editor.en.common email to both accounts. Note that even
 //if two accounts have the same name, they may belong to different people as peopl
 //e could have the same name. A person can have any number of accounts initially, 
 //but all of their accounts definitely have the same name. 
@@ -22,7 +22,7 @@
 //Output: [["John","john00@mail.com","john_newyork@mail.com","johnsmith@mail.com
 //"],["Mary","mary@mail.com"],["John","johnnybravo@mail.com"]]
 //Explanation:
-//The first and third John's are the same person as they have the common email "
+//The first and third John's are the same person as they have the com.songlunzhao.leetcode.editor.en.common email "
 //johnsmith@mail.com".
 //The second John and Mary are different people as none of their email addresses
 // are used by other accounts.

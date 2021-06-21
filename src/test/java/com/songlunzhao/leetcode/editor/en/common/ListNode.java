@@ -1,4 +1,4 @@
-package common;
+package com.songlunzhao.leetcode.editor.en.common;
 
 public class ListNode {
     public int val;

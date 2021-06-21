@@ -1,7 +1,5 @@
-import common.ListNode;
+import com.songlunzhao.leetcode.editor.en.common.ListNode;
 import org.testng.annotations.Test;
-
-import java.util.List;
 
 public class ReverseLinkedListIITest_92 {
 

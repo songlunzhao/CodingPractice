@@ -1,9 +1,6 @@
-import common.ListNode;
+import com.songlunzhao.leetcode.editor.en.common.ListNode;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Stack;
 
 import static org.testng.Assert.assertEquals;

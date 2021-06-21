@@ -2,7 +2,7 @@
 // meeting duration duration, return the earliest time slot that works for both of
 // them and is of duration duration. 
 //
-// If there is no common time slot that satisfies the requirements, return an em
+// If there is no com.songlunzhao.leetcode.editor.en.common time slot that satisfies the requirements, return an em
 //pty array. 
 //
 // The format of a time slot is an array of two elements [start, end] representi

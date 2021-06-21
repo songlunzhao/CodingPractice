@@ -1,5 +1,5 @@
-//Given an array of integers nums and an integer target, return indices
-// of the two numbers such that they add up to target.
+//Given an array of integers nums and an integer target, return indices of the t
+//wo numbers such that they add up to target. 
 //
 // You may assume that each input would have exactly one solution, and you may n
 //ot use the same element twice. 
@@ -33,20 +33,28 @@
 // Constraints: 
 //
 // 
-// 2 <= nums.length <= 103 
+// 2 <= nums.length <= 104 
 // -109 <= nums[i] <= 109 
 // -109 <= target <= 109 
 // Only one valid answer exists. 
 // 
-// Related Topics Array Hash Table 
-// 👍 19311 👎 687
+//
+// 
+//Follow-up: Can you come up with an algorithm that is less than O(n2) time comp
+//lexity? Related Topics Array Hash Table 
+// 👍 21756 👎 742
 
 
+package com.songlunzhao.leetcode.editor.en;
 
 import java.util.HashMap;
 import java.util.Map;
 
-//leetcode submit region begin(Prohibit modification and deletion)
+public class TwoSum_1 {
+    Solution solution = new TwoSum_1()
+                        .new Solution();
+    
+    //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         int len = nums.length;
@@ -69,3 +77,5 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
+
+}

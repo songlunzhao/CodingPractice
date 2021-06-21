@@ -5,7 +5,7 @@
 * Sliding window for beginners by @wh0ami - https://leetcode.com/discuss/general-discussion/657507/sliding-window-for-beginners-problems-template-sample-solutions/562721 || [LIST - https://leetcode.com/list/x1lbzfk3]
 * DP Patterns by @aatalyk - https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
 Leetcode patterns from edu_cative_dot_io by @late_riser - https://leetcode.com/discuss/general-discussion/457546/LeetCode-Problem-Patterns-from-***
-* List of questions sorted by common patterns by @Maverick2594 - https://leetcode.com/discuss/career/448285/List-of-questions-sorted-by-common-patterns
+* List of questions sorted by com.songlunzhao.leetcode.editor.en.common patterns by @Maverick2594 - https://leetcode.com/discuss/career/448285/List-of-questions-sorted-by-com.songlunzhao.leetcode.editor.en.common-patterns
 * How to solve DP - String? Template and 4 Steps to be followed by @igooglethings - https://leetcode.com/discuss/general-discussion/651719/how-to-solve-dp-string-template-and-4-steps-to-be-followed
 * Using bit manipulation to solve problems easily and efficiently by @LHearen - https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
 * Recursive approach to segment trees and range sum queries and lazy propagation - https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/
@@ -54,7 +54,7 @@ Leetcode patterns from edu_cative_dot_io by @late_riser - https://leetcode.com/d
 * 11 companies, 55 interviews - https://leetcode.com/discuss/career/394056/11-companies-55-Interviews-9-offers-including-Google-Amazon-(and-Square)
 * Notes for night before interview - https://leetcode.com/discuss/career/217868/My-notes-for-the-night-before-interview
 * Google L3 offer - https://leetcode.com/discuss/interview-experience/456432/NDA-Google-or-L3-or-Bangalore-or-Dec-2019-Offer
-* List of questions categorised by their patterns - https://leetcode.com/discuss/career/448285/List-of-questions-sorted-by-common-patterns
+* List of questions categorised by their patterns - https://leetcode.com/discuss/career/448285/List-of-questions-sorted-by-com.songlunzhao.leetcode.editor.en.common-patterns
 * Google Interview tips + resources - https://leetcode.com/discuss/career/449744/Google-Interview-Tips-%2B-FAQs-Answered-%2B-Resources
 * Amazon LP resource - https://leetcode.com/discuss/interview-question/437082/Amazon-Behavioral-questions-or-Leadership-Principles-or-LP
 * Binary Search Template -  https://leetcode.com/discuss/general-discussion/786126/python-powerful-ultimate-binary-search-template-solved-many-problems
