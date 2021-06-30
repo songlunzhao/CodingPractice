@@ -82,6 +82,10 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
+
 public class RomanToInteger_13 {
 
     
@@ -94,7 +98,31 @@ public class RomanToInteger_13 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int romanToInt(String s) {
-        
+
+        Map<Character, Integer> romanDic = new HashMap<>();
+        Stack<Character> stack = new Stack<>();
+        romanDic.put('I', 1);
+        romanDic.put('V', 5);
+        romanDic.put('X', 10);
+        romanDic.put('L',50);
+        romanDic.put('C',100);
+        romanDic.put('D',500);
+        romanDic.put('M',1000);
+
+        int ans = 0;
+        for(int i=0; i<s.length(); i++) {
+            int val = romanDic.get(s.charAt(i));
+            if(!stack.isEmpty() && romanDic.get(stack.peek())<val){
+                ans=ans+val-romanDic.get(stack.pop());
+            } else {
+                stack.push(s.charAt(i));
+            }
+        }
+        while (!stack.isEmpty()){
+            int val = romanDic.get(stack.pop());
+            ans=ans+val;
+        }
+        return ans;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

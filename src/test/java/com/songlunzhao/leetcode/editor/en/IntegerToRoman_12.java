@@ -78,23 +78,58 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+
 import org.testng.annotations.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class IntegerToRoman_12 {
 
-    
-    
+
     @Test
-    public void testIntegerToRoman(){
-       Solution solution = new IntegerToRoman_12()
-                        .new Solution();
+    public void testIntegerToRoman() {
+        Solution solution = new IntegerToRoman_12()
+                .new Solution();
     }
+
     //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public String intToRoman(int num) {
-        
+    class Solution {
+        public String intToRoman(int num) {
+            char[] roman = new char[] {'M', 'D', 'C', 'L','X','V', 'I'};
+            int[] value = new int[]{1000, 500, 100, 50, 10, 5, 1};
+            StringBuilder ans = new StringBuilder();
+
+           //use 1000, 100, 10, 1 to decide the single digit value
+            for(int i=0; i< value.length; i=i+2) {
+                int x = num/value[i];
+                //for different single digit value, generate the roman letter
+                if(x<4){
+                    for(int j=0; j<x; j++){
+                        ans = ans.append(roman[i]);
+                    }
+                } else if (x==4) {
+                    ans = ans.append(roman[i]);
+                    ans = ans.append(roman[i-1]);
+                } else if (x>4 && x<9) {
+                    ans = ans.append(roman[i-1]);
+                    for (int j = 5; j < x; j++) {
+                        ans = ans.append(roman[i]);
+                    }
+                } else if (x==9) {
+                    ans = ans = ans.append(roman[i]);
+                    ans = ans = ans.append(roman[i-2]);
+                }
+                num = num % value[i];
+            }
+
+
+
+            return ans.toString();
+        }
+
+
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
