@@ -22,5 +22,8 @@ public class PrintUtils <T>{
     public static void printArray(Object[] input) {
         System.out.println(Arrays.deepToString(input));
     }
+    public static void printArray(int[] input) {
+        System.out.println(Arrays.deepToString(Arrays.asList(input).toArray()));
+    }
 
 }
