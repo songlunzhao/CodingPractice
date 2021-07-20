@@ -21,7 +21,13 @@ public class TreeNode {
     }
 
     public static TreeNode buildBinaryTree(Integer[] values) {
-        return insertLevelOrder(values, null, 0 );
+        if(values==null || values.length==0) return null;
+        Queue<TreeNode> queue = new LinkedList<>();
+        TreeNode root = new TreeNode(values[0]);
+        queue.add(root);
+        breathFirstTraversalInsert(values, queue,1);
+        //return insertLevelOrder(values, null, 0 );
+        return root;
     }
 
     public static Integer[] buildArray(TreeNode root){
@@ -43,23 +49,32 @@ public class TreeNode {
         return ans.toArray(new Integer[ans.size()]);
     }
 
-    private static TreeNode insertLevelOrder(Integer[] arr, TreeNode root, int i) {
-        if (i< arr.length){
-            TreeNode tmp = new TreeNode(arr[i]);
-            root=tmp;
-            // insert left child
-            if(2*i+1<arr.length && arr[2*i+1]!=null){
-                root.left = insertLevelOrder(arr, root.left,
-                        2 * i + 1);
+    private static void breathFirstTraversalInsert(Integer[] arr, Queue<TreeNode> queue, int idx){
+        Queue<TreeNode> tmp = new LinkedList<>();
+        while(!queue.isEmpty() && idx< arr.length){
+            TreeNode node = queue.poll();
+            if(node!=null){
+                if(arr[idx]==null){
+                    node.left=null;
+                } else {
+                    node.left = new TreeNode(arr[idx]);
+                }
+                tmp.add(node.left);
+                idx++;
+                if(idx>= arr.length) break;
+                if(arr[idx]==null){
+                    node.right=null;
+                } else {
+                    node.right = new TreeNode(arr[idx]);
+                }
+                tmp.add(node.right);
+                idx++;
             }
-            // insert right child
-            if(2*i+2<arr.length && arr[2*i+2]!=null){
-                root.right = insertLevelOrder(arr, root.right,
-                        2 * i + 2);
-            }
-
         }
-        return root;
+        if(!tmp.isEmpty()) {
+            queue.addAll(tmp);
+            breathFirstTraversalInsert(arr, queue, idx);
+        }
     }
 
 }
