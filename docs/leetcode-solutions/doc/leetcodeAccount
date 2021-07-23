@@ -1,15 +1,40 @@
-[$!{question.frontendQuestionId}]${question.title}
 
-${question.content}
-
-${question.code}
 
 
 Leetcode account
 yangqh987@gmail.com
 CodingLC~
 
-public static void main(String[] args) {
-        Solution solution = new $!velocityTool.camelCaseName(${question.titleSlug})_${question.frontendQuestionId}()
+
+plugin name "leetcode plugin"
+*************************************************************
+default codeFileName
+[$!{question.frontendQuestionId}]${question.title}
+*************************************************************
+default codeTemplate
+${question.content}
+
+${question.code}
+*************************************************************
+my codeFileName
+$!velocityTool.camelCaseName(${question.titleSlug})_${question.frontendQuestionId}
+*************************************************************
+my codeTemplate
+
+${question.content}
+
+package com.songlunzhao.leetcode.editor.en;
+import org.testng.annotations.Test;
+
+public class $!velocityTool.camelCaseName(${question.titleSlug})_${question.frontendQuestionId} {
+
+
+
+    @Test
+    public void test$!velocityTool.camelCaseName(${question.titleSlug})(){
+       Solution solution = new $!velocityTool.camelCaseName(${question.titleSlug})_${question.frontendQuestionId}()
                         .new Solution();
     }
+    ${question.code}
+}
+******************************************************************************
