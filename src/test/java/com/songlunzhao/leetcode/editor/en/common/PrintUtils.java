@@ -28,6 +28,10 @@ public class PrintUtils <T>{
         Object[] arr = input.toArray();
         System.out.println(Arrays.deepToString(arr));
     }
+    public static void printStringList(List<String> input) {
+        Object[] arr = input.toArray();
+        System.out.println(Arrays.deepToString(arr));
+    }
     public static void print2DArray(int[][] input) {
         System.out.println(Arrays.deepToString(input));
     }
