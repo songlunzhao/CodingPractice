@@ -1,4 +1,5 @@
-//Given n non-negative integers a1, a2, ..., an , where each represents a point 
+//Given n non-negative integers a1, a2, ..., an ,
+// where each represents a point
 //at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of
 // the line i is at (i, ai) and (i, 0). Find two lines, which, together with the x
 //-axis forms a container, such that the container contains the most water. 
@@ -53,6 +54,8 @@ package com.songlunzhao.leetcode.editor.en;
 
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 public class ContainerWithMostWater_11 {
 
 //    public static void main(String[] args) {
@@ -66,34 +69,24 @@ public class ContainerWithMostWater_11 {
                 .new Solution();
         int [] height = new int[] {1,8,6,2,5,4,8,3,7};
         int max = solution.maxArea(height);
+        assertEquals(max, 49);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maxArea(int[] height) {
-        int[] maxContain = new int[height.length];//max water at idx i;
-        for(int i=0; i<height.length; i++){
-            int left=i-1, right=i+1;
-            int max=0;
-            while(left>=0 && right< height.length){
-                int contain = (i-left) * Math.min(height[left], height[i]);
-                if(max<contain)
-                    max=contain;
-                contain = (right-i) * Math.min(height[right], height[i]);
-                if(max<contain){
-                    max=contain;
-                }
-                maxContain[i]=max;
-                left--;
-                right++;
+        if(height==null || height.length<=1) return 0;
+        int left=0, right= height.length-1;
+        int max=0;
+        while(left<right){
+            int contain = Math.min(height[left], height[right]) * (right-left);
+            max=Math.max(contain,max);
+            if(height[left]<height[right]){
+                left++;
+            } else {
+                right--;
             }
         }
-        int ans=0;
-        for(int i=0; i< maxContain.length; i++){
-            if(ans<maxContain[i]){
-                ans=maxContain[i];
-            }
-        }
-        return ans;
+        return max;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
