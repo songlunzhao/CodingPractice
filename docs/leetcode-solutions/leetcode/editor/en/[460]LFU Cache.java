@@ -4,8 +4,8 @@
 // Implement the LFUCache class: 
 //
 // 
-// LFUCache(int capacity) Initializes the object with the capacity of the data s
-//tructure. 
+// LFUCache(int capacity) Initializes the object
+// with the capacity of the data structure.
 // int get(int key) Gets the value of the key if the key exists in the cache. Ot
 //herwise, returns -1. 
 // void put(int key, int value) Update the value of the key if present, or inser
