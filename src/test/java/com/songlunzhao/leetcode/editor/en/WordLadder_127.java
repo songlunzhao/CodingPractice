@@ -1,5 +1,6 @@
-//A transformation sequence from word beginWord to word endWord using a dictiona
-//ry wordList is a sequence of words beginWord -> s1 -> s2 -> ... -> sk such that:
+//A transformation sequence from word beginWord to
+// word endWord using a dictionary wordList is a
+// sequence of words beginWord -> s1 -> s2 -> ... -> sk such that:
 // 
 //
 // 
@@ -53,6 +54,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.*;
+
 public class WordLadder_127 {
 
     
@@ -61,12 +64,63 @@ public class WordLadder_127 {
     public void testWordLadder(){
        Solution solution = new WordLadder_127()
                         .new Solution();
+       List<String> wordList = Arrays.asList(new String[]{"hot","dot","dog","lot","log","cog"});
+        solution.ladderLength("hit","cog", wordList);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        
-    }
+        class Node {
+            String word;
+            int level;
+            Node(String word, int level){
+                this.word=word;
+                this.level=level;
+            }
+        }
+        public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+            Queue<Node> queue = new LinkedList<>();
+            queue.add(new Node(beginWord, 1));
+            Set<String> wordSet = new HashSet<>(wordList);
+            while(!queue.isEmpty()){
+                Node top = queue.poll();
+                if(endWord.equals(top.word)) return top.level;
+
+                Iterator<String> iterator = wordSet.iterator();
+                while (iterator.hasNext()) {
+                    String element = iterator.next();
+                    if(element.equals(top.word)){
+                        iterator.remove();
+                        continue;
+                    }
+                    if (isChild(top.word, element)) {
+                        queue.add(new Node(element, top.level+1));
+                        iterator.remove();
+                    }
+                }
+            }
+            return 0;
+        }
+
+        public boolean isChild(String word1, String word2){
+            //check if word2 is child of word1
+
+            if(word1.length()!=word2.length()){
+                return false;
+            }
+            int j=0;
+            for(int i=0; i<word1.length(); i++){
+                if(word1.charAt(i)!=word2.charAt(i)){
+                    j++;
+                    if(j>1){
+                        return false;
+                    }
+                }
+            }
+            return j<=1;
+
+        }
+
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
