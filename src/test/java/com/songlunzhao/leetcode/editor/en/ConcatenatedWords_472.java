@@ -38,10 +38,7 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class ConcatenatedWords_472 {
 
@@ -54,16 +51,38 @@ public class ConcatenatedWords_472 {
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+
+        class TrieNode {
+            HashMap<Character, TrieNode> children =
+                    new HashMap<Character, TrieNode>();
+            String word = null; // not null means this is the word end node
+            public TrieNode() {}
+        }
+
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
         Set<String> wordDict = new HashSet<>(Arrays.asList(words));
+        Arrays.sort(words);
+        List<String> ans = new ArrayList<>();
+        for(int i=0; i< words.length; i++){
+            if(matchWord(words[i], wordDict)){
+                ans.add(words[i]);
+            }
+        }
+        return ans;
 
     }
 
     boolean matchWord(String word, Set<String> wordDict) {
-        boolean[] dp = new boolean[wordDict.size()+1];
-        for(int end=1; end<word.length()+1; end++){
-            
+        String prefix, suffix;
+        for(int i=1; i<word.length(); i++){
+            prefix = word.substring(0,i);
+            if(!wordDict.contains(prefix)) continue;
+            suffix=word.substring(i);
+            if(wordDict.contains(suffix)||matchWord(suffix,wordDict)){
+                return true;
+            }
         }
+        return false;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
