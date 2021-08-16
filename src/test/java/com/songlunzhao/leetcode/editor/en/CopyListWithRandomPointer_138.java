@@ -1,4 +1,5 @@
-//A linked list of length n is given such that each node contains an additional 
+//A linked list of length n is given such that each node contains
+// an additional
 //random pointer, which could point to any node in the list, or null. 
 //
 // Construct a deep copy of the list. The deep copy should consist of exactly n 
@@ -70,7 +71,11 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.Node;
 import org.testng.annotations.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class CopyListWithRandomPointer_138 {
 
@@ -99,7 +104,42 @@ class Node {
 
 class Solution {
     public Node copyRandomList(Node head) {
-        
+        if(head==null) return null;
+        Map<Node,Integer> nodeMap = new HashMap<>();
+        Node p = head;
+        int i=0;
+        //go through list and put idx to each node
+        while(p!=null){
+            nodeMap.put(p,i);
+            i++;
+            p=p.next;
+        }
+        Node[] newNodes = new Node[nodeMap.size()];
+        i=0;p=head;
+        while(p!=null){
+
+            if(newNodes[i]==null){
+                Node node = new Node(p.val);
+                newNodes[i]=node;
+            }
+            //set next pointer
+            if(i>0){
+                newNodes[i-1].next=newNodes[i];
+            }
+            //set random pointer
+            if(p.random!=null){
+                int idx = nodeMap.get(p.random);
+                if(newNodes[idx]==null){
+                    Node node = new Node(p.random.val);
+                    newNodes[idx]=node;
+                }
+                newNodes[i].random=newNodes[idx];
+            }
+            p=p.next;
+            i++;
+        }
+
+        return newNodes[0];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

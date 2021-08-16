@@ -1,5 +1,5 @@
-//Given the roots of two binary trees root and subRoot, return true if there is 
-//a subtree of root with the same structure and node values of subRoot and false o
+//Given the roots of two binary trees root and subRoot, return true if
+// there is a subtree of root with the same structure and node values of subRoot and false o
 //therwise. 
 //
 // A subtree of a binary tree tree is a tree that consists of a node in tree and
@@ -36,7 +36,11 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class SubtreeOfAnotherTree_572 {
 
@@ -65,7 +69,23 @@ public class SubtreeOfAnotherTree_572 {
  */
 class Solution {
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
-        
+        return dfs(root, subRoot);
+    }
+
+    private boolean dfs(TreeNode root, TreeNode subRoot){
+        if(root==null) return false;
+        if(compareTree(root, subRoot)) return true;
+        return dfs(root.left, subRoot) || dfs(root.right,subRoot);
+    }
+
+    private boolean compareTree(TreeNode root1, TreeNode root2){
+        if(root1==null && root2==null) return true;
+        if(root1==null && root2!=null) return false;
+        if(root1!=null && root2==null) return false;
+        if(root1.val!=root2.val) return false;
+        if(!compareTree(root1.left, root2.left))return false;
+        if(!compareTree(root1.right, root2.right))return false;
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
