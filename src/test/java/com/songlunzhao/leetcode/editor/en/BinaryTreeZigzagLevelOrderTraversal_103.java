@@ -1,6 +1,6 @@
-//Given the root of a binary tree, return the zigzag level order traversal of it
-//s nodes' values. (i.e., from left to right, then right to left for the next leve
-//l and alternate between). 
+//Given the root of a binary tree,
+// return the zigzag level order traversal of its nodes' values.
+// (i.e., from left to right, then right to left for the next level and alternate between).
 //
 // 
 // Example 1: 
@@ -36,7 +36,10 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
+
+import java.util.*;
 
 public class BinaryTreeZigzagLevelOrderTraversal_103 {
 
@@ -65,7 +68,45 @@ public class BinaryTreeZigzagLevelOrderTraversal_103 {
  */
 class Solution {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        
+        Queue<TreeNode> queue = new LinkedList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        List<List<Integer>> ans = new ArrayList<>();
+        queue.add(root);
+        while(true){
+            List<Integer> levelList = new ArrayList<>();
+            while(!queue.isEmpty()){
+                TreeNode node = queue.poll();
+                if(node!=null){
+                    levelList.add(node.val);
+                    stack.push(node.left);
+                    stack.push(node.right);
+                }
+            }
+            if(levelList.isEmpty())
+                break;
+            else
+                ans.add(levelList);
+            levelList = new ArrayList<>();
+            Stack<TreeNode> tmpStack = new Stack<>();
+            while (!stack.isEmpty()){
+                TreeNode node = stack.pop();
+                if(node!=null){
+                    levelList.add(node.val);
+                    tmpStack.push(node.right);
+                    tmpStack.push(node.left);
+                }
+            }
+            if(levelList.isEmpty())
+                break;
+            else {
+                ans.add(levelList);
+                while(!tmpStack.isEmpty()){
+                    queue.add(tmpStack.pop());
+                }
+            }
+        }
+
+        return ans;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

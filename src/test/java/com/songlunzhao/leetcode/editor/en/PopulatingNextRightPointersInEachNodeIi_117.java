@@ -63,7 +63,7 @@ public class PopulatingNextRightPointersInEachNodeIi_117 {
     @Test
     public void testPopulatingNextRightPointersInEachNodeIi() {
         Solution solution = new PopulatingNextRightPointersInEachNodeIi_117()
-                .new Solution();
+            .new Solution();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 /*
@@ -94,10 +94,12 @@ class Node {
             Queue<Node> queue = new LinkedList<>();
             queue.add(root);
 
-            while (true) {
-                Queue<Node> levelQueue = new LinkedList<>();
+
+
+            while (!queue.isEmpty()) {
+                int size = queue.size();
                 Node preNode = null;
-                while (!queue.isEmpty()) {
+                for (int i = 0; i < size; i++) {
                     Node node = queue.poll();
                     if (node != null) {
                         if (preNode != null) {
@@ -105,14 +107,11 @@ class Node {
                         }
                         preNode = node;
 
-                        levelQueue.add(node.left);
-                        levelQueue.add(node.right);
+                        queue.add(node.left);
+                        queue.add(node.right);
                     }
                 }
-                if (levelQueue.isEmpty()) break;
-                queue.addAll(levelQueue);
             }
-
             return root;
         }
     }

@@ -51,6 +51,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+
 import com.songlunzhao.leetcode.editor.en.common.Node;
 import org.testng.annotations.Test;
 
@@ -59,12 +60,11 @@ import java.util.Queue;
 
 public class PopulatingNextRightPointersInEachNode_116 {
 
-    
-    
+
     @Test
-    public void testPopulatingNextRightPointersInEachNode(){
-       Solution solution = new PopulatingNextRightPointersInEachNode_116()
-                        .new Solution();
+    public void testPopulatingNextRightPointersInEachNode() {
+        Solution solution = new PopulatingNextRightPointersInEachNode_116()
+            .new Solution();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 /*
@@ -90,33 +90,33 @@ class Node {
 };
 */
 
-class Solution {
-    public Node connect(Node root) {
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(root);
+    class Solution {
+        public Node connect(Node root) {
+            Queue<Node> queue = new LinkedList<>();
+            queue.add(root);
 
-        while(true){
-            Queue<Node> levelQueue = new LinkedList<>();
-            Node preNode=null;
-            while (!queue.isEmpty()){
-                Node node = queue.poll();
-                if(preNode!=null){
-                    preNode.next=node;
+            while (!queue.isEmpty()) {
+                int size = queue.size();
+                Node preNode = null;
+                for (int i = 0; i < size; i++) {
+                    Node node = queue.poll();
+                    if (preNode != null) {
+                        preNode.next = node;
+                    }
+                    preNode = node;
+                    if (node != null) {
+                        queue.add(node.left);
+                        queue.add(node.right);
+                    }
                 }
-                preNode=node;
-                if(node!=null) {
-                    levelQueue.add(node.left);
-                    levelQueue.add(node.right);
-                }
+
             }
-            if(levelQueue.isEmpty()) break;
-            queue.addAll(levelQueue);
+
+
+            return root;
         }
 
-        return root;
     }
-
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
