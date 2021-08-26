@@ -55,7 +55,7 @@ public class KThSmallestPrimeFraction_786 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] kthSmallestPrimeFraction(int[] arr, int k) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

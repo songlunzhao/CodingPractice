@@ -113,7 +113,7 @@ public class MaskingPersonalInformation_831 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String maskPII(String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

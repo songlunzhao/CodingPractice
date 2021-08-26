@@ -88,8 +88,8 @@ public class DesignAnExpressionTreeWithEvaluateFunction_1628 {
     
     @Test
     public void testDesignAnExpressionTreeWithEvaluateFunction(){
-       Solution solution = new DesignAnExpressionTreeWithEvaluateFunction_1628()
-                        .new Solution();
+        TreeBuilder solution = new DesignAnExpressionTreeWithEvaluateFunction_1628()
+                        .new TreeBuilder();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 /**
@@ -111,7 +111,7 @@ abstract class Node {
 
 class TreeBuilder {
     Node buildTree(String[] postfix) {
-        
+        return null;
     }
 };
 

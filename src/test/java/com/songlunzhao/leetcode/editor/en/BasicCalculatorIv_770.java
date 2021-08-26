@@ -111,6 +111,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class BasicCalculatorIv_770 {
 
     
@@ -123,7 +125,7 @@ public class BasicCalculatorIv_770 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> basicCalculatorIV(String expression, String[] evalvars, int[] evalints) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

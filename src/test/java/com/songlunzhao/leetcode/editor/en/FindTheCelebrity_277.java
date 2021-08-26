@@ -67,9 +67,10 @@ public class FindTheCelebrity_277 {
 /* The knows API is defined in the parent class Relation.
       boolean knows(int a, int b); */
 
-public class Solution extends Relation {
+//public class Solution extends Relation {
+    public class Solution {
     public int findCelebrity(int n) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

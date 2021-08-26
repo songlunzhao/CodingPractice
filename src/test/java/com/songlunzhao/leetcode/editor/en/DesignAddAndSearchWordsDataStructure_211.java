@@ -56,8 +56,8 @@ public class DesignAddAndSearchWordsDataStructure_211 {
     
     @Test
     public void testDesignAddAndSearchWordsDataStructure(){
-       Solution solution = new DesignAddAndSearchWordsDataStructure_211()
-                        .new Solution();
+        WordDictionary solution = new DesignAddAndSearchWordsDataStructure_211()
+                        .new WordDictionary();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class WordDictionary {
@@ -72,7 +72,7 @@ class WordDictionary {
     }
     
     public boolean search(String word) {
-        
+        return true;
     }
 }
 

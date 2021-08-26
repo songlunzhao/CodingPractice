@@ -57,6 +57,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
 public class FlipEquivalentBinaryTrees_951 {
@@ -86,7 +87,7 @@ public class FlipEquivalentBinaryTrees_951 {
  */
 class Solution {
     public boolean flipEquiv(TreeNode root1, TreeNode root2) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

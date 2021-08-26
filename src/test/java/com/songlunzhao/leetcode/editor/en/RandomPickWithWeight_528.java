@@ -77,7 +77,7 @@ public class RandomPickWithWeight_528 {
     @Test
     public void testRandomPickWithWeight(){
        Solution solution = new RandomPickWithWeight_528()
-                        .new Solution();
+                        .new Solution(null);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -87,7 +87,7 @@ class Solution {
     }
     
     public int pickIndex() {
-        
+        return 0;
     }
 }
 

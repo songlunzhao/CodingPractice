@@ -37,6 +37,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class PartitionLabels_763 {
 
     
@@ -49,7 +51,7 @@ public class PartitionLabels_763 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<Integer> partitionLabels(String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

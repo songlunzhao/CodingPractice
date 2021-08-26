@@ -88,7 +88,7 @@ public class SingleThreadedCpu_1834 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] getOrder(int[][] tasks) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

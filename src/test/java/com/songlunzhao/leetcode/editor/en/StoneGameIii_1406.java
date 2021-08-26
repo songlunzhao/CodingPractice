@@ -91,7 +91,7 @@ public class StoneGameIii_1406 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String stoneGameIII(int[] stoneValue) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

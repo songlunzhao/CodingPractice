@@ -70,7 +70,7 @@ public class AngleBetweenHandsOfAClock_1344 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public double angleClock(int hour, int minutes) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -107,6 +107,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class RemoveComments_722 {
 
     
@@ -119,7 +121,7 @@ public class RemoveComments_722 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> removeComments(String[] source) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

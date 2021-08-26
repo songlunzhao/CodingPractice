@@ -54,14 +54,16 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.Iterator;
+
 public class PeekingIterator_284 {
 
     
     
     @Test
     public void testPeekingIterator(){
-       Solution solution = new PeekingIterator_284()
-                        .new Solution();
+		PeekingIterator solution = new PeekingIterator_284()
+                        .new PeekingIterator(null);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 // Java Iterator interface reference:
@@ -75,19 +77,19 @@ class PeekingIterator implements Iterator<Integer> {
 	
     // Returns the next element in the iteration without advancing the iterator.
 	public Integer peek() {
-        
+        return null;
 	}
 	
 	// hasNext() and next() should behave the same as in the Iterator interface.
 	// Override them if needed.
 	@Override
 	public Integer next() {
-	    
+	    return null;
 	}
 	
 	@Override
 	public boolean hasNext() {
-	    
+	    return true;
 	}
 }
 //leetcode submit region end(Prohibit modification and deletion)

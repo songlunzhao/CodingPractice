@@ -85,6 +85,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class TheMostSimilarPathInAGraph_1548 {
 
     
@@ -97,7 +99,7 @@ public class TheMostSimilarPathInAGraph_1548 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<Integer> mostSimilar(int n, int[][] roads, String[] names, String[] targetPath) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -93,8 +93,8 @@ public class DesignTicTacToe_348 {
     
     @Test
     public void testDesignTicTacToe(){
-       Solution solution = new DesignTicTacToe_348()
-                        .new Solution();
+        TicTacToe solution = new DesignTicTacToe_348()
+                        .new TicTacToe(1);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class TicTacToe {
@@ -113,7 +113,7 @@ class TicTacToe {
                 1: Player 1 wins.
                 2: Player 2 wins. */
     public int move(int row, int col, int player) {
-        
+        return 0;
     }
 }
 

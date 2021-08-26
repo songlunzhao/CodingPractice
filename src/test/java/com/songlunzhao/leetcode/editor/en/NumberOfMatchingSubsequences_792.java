@@ -54,7 +54,7 @@ public class NumberOfMatchingSubsequences_792 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int numMatchingSubseq(String s, String[] words) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

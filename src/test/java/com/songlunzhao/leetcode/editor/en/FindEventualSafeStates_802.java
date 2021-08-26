@@ -49,6 +49,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class FindEventualSafeStates_802 {
 
     
@@ -61,7 +63,7 @@ public class FindEventualSafeStates_802 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<Integer> eventualSafeNodes(int[][] graph) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

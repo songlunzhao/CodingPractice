@@ -63,7 +63,7 @@ public class CardFlippingGame_822 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int flipgame(int[] fronts, int[] backs) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

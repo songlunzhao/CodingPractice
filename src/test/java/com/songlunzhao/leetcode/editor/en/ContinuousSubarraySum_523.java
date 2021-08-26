@@ -60,7 +60,7 @@ public class ContinuousSubarraySum_523 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean checkSubarraySum(int[] nums, int k) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -74,7 +74,7 @@ public class ChampagneTower_799 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public double champagneTower(int poured, int query_row, int query_glass) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

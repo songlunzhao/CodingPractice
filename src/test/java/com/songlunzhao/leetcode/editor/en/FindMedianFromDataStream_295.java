@@ -69,8 +69,8 @@ public class FindMedianFromDataStream_295 {
     
     @Test
     public void testFindMedianFromDataStream(){
-       Solution solution = new FindMedianFromDataStream_295()
-                        .new Solution();
+        MedianFinder solution = new FindMedianFromDataStream_295()
+                        .new MedianFinder();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class MedianFinder {
@@ -85,7 +85,7 @@ class MedianFinder {
     }
     
     public double findMedian() {
-        
+        return 0;
     }
 }
 

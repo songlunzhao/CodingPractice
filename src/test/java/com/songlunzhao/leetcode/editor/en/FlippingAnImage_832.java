@@ -62,7 +62,7 @@ public class FlippingAnImage_832 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[][] flipAndInvertImage(int[][] image) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

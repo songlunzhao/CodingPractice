@@ -68,6 +68,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class SearchSuggestionsSystem_1268 {
 
     
@@ -80,7 +82,7 @@ public class SearchSuggestionsSystem_1268 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<List<String>> suggestedProducts(String[] products, String searchWord) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

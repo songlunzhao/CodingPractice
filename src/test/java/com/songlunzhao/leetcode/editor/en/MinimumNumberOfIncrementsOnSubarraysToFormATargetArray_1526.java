@@ -75,7 +75,7 @@ public class MinimumNumberOfIncrementsOnSubarraysToFormATargetArray_1526 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minNumberOperations(int[] target) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

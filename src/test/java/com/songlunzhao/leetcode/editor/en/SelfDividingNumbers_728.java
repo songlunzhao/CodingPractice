@@ -32,6 +32,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class SelfDividingNumbers_728 {
 
     
@@ -44,7 +46,7 @@ public class SelfDividingNumbers_728 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<Integer> selfDividingNumbers(int left, int right) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

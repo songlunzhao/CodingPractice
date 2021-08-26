@@ -63,7 +63,7 @@ public class New21Game_837 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public double new21Game(int n, int k, int maxPts) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

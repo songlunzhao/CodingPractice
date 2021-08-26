@@ -44,6 +44,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class MaximumLengthOfAConcatenatedStringWithUniqueCharacters_1239 {
 
     
@@ -56,7 +58,7 @@ public class MaximumLengthOfAConcatenatedStringWithUniqueCharacters_1239 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maxLength(List<String> arr) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

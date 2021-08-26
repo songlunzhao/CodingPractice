@@ -63,7 +63,7 @@ public class CarFleetIi_1776 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public double[] getCollisionTimes(int[][] cars) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -64,7 +64,10 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class VerticalOrderTraversalOfABinaryTree_987 {
 
@@ -93,7 +96,7 @@ public class VerticalOrderTraversalOfABinaryTree_987 {
  */
 class Solution {
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

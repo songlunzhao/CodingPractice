@@ -42,6 +42,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
 public class ConstructBinaryTreeFromString_536 {
@@ -71,7 +72,7 @@ public class ConstructBinaryTreeFromString_536 {
  */
 class Solution {
     public TreeNode str2tree(String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -65,7 +65,7 @@ public class BuildingsWithAnOceanView_1762 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] findBuildings(int[] heights) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -71,9 +71,9 @@ class Employee {
 */
 
 class Solution {
-    public int getImportance(List<Employee> employees, int id) {
-        
-    }
+//    public int getImportance(List<Employee> employees, int id) {
+//
+//    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

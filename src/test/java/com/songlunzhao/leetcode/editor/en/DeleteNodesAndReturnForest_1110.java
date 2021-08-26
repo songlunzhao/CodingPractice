@@ -35,7 +35,10 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class DeleteNodesAndReturnForest_1110 {
 
@@ -64,7 +67,7 @@ public class DeleteNodesAndReturnForest_1110 {
  */
 class Solution {
     public List<TreeNode> delNodes(TreeNode root, int[] to_delete) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

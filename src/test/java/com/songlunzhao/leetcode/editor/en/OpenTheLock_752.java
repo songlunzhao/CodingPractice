@@ -84,7 +84,7 @@ public class OpenTheLock_752 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int openLock(String[] deadends, String target) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

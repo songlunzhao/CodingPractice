@@ -59,7 +59,7 @@ public class MostCommonWord_819 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String mostCommonWord(String paragraph, String[] banned) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

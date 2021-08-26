@@ -36,6 +36,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class CriticalConnectionsInANetwork_1192 {
 
     
@@ -48,7 +50,7 @@ public class CriticalConnectionsInANetwork_1192 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

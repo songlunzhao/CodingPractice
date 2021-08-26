@@ -61,7 +61,7 @@ public class NumberOfCornerRectangles_750 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int countCornerRectangles(int[][] grid) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -60,7 +60,7 @@ public class ReachANumber_754 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int reachNumber(int target) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

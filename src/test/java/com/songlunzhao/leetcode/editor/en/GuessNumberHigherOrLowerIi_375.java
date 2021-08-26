@@ -92,7 +92,7 @@ public class GuessNumberHigherOrLowerIi_375 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int getMoneyAmount(int n) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

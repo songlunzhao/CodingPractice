@@ -54,7 +54,7 @@ public class AddStrings_415 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String addStrings(String num1, String num2) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

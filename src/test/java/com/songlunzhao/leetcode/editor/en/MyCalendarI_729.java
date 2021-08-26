@@ -55,8 +55,8 @@ public class MyCalendarI_729 {
     
     @Test
     public void testMyCalendarI(){
-       Solution solution = new MyCalendarI_729()
-                        .new Solution();
+        MyCalendar solution = new MyCalendarI_729()
+                        .new MyCalendar();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class MyCalendar {
@@ -66,7 +66,7 @@ class MyCalendar {
     }
     
     public boolean book(int start, int end) {
-        
+        return true;
     }
 }
 

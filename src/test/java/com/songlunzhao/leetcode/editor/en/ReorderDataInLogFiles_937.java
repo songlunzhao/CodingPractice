@@ -71,7 +71,7 @@ public class ReorderDataInLogFiles_937 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String[] reorderLogFiles(String[] logs) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

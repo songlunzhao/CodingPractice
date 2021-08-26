@@ -62,8 +62,8 @@ public class TimeBasedKeyValueStore_981 {
     
     @Test
     public void testTimeBasedKeyValueStore(){
-       Solution solution = new TimeBasedKeyValueStore_981()
-                        .new Solution();
+        TimeMap solution = new TimeBasedKeyValueStore_981()
+                        .new TimeMap();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class TimeMap {
@@ -78,7 +78,7 @@ class TimeMap {
     }
     
     public String get(String key, int timestamp) {
-        
+        return null;
     }
 }
 

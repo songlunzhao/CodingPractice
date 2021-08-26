@@ -51,6 +51,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class ReconstructItinerary_332 {
 
     
@@ -63,7 +65,7 @@ public class ReconstructItinerary_332 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> findItinerary(List<List<String>> tickets) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

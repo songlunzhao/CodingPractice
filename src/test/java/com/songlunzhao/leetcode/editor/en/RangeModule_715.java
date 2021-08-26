@@ -68,8 +68,8 @@ public class RangeModule_715 {
     
     @Test
     public void testRangeModule(){
-       Solution solution = new RangeModule_715()
-                        .new Solution();
+        RangeModule solution = new RangeModule_715()
+                        .new RangeModule();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class RangeModule {
@@ -83,7 +83,7 @@ class RangeModule {
     }
     
     public boolean queryRange(int left, int right) {
-        
+        return true;
     }
     
     public void removeRange(int left, int right) {

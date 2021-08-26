@@ -68,7 +68,10 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class BoundaryOfBinaryTree_545 {
 
@@ -97,7 +100,7 @@ public class BoundaryOfBinaryTree_545 {
  */
 class Solution {
     public List<Integer> boundaryOfBinaryTree(TreeNode root) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -50,6 +50,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.ListNode;
 import org.testng.annotations.Test;
 
 public class MergeKSortedLists_23 {
@@ -74,7 +75,7 @@ public class MergeKSortedLists_23 {
  */
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

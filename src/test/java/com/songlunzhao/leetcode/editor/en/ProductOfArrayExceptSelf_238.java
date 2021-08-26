@@ -47,7 +47,7 @@ public class ProductOfArrayExceptSelf_238 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] productExceptSelf(int[] nums) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

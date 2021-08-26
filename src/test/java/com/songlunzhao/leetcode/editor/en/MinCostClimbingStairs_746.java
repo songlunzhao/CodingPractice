@@ -49,7 +49,7 @@ public class MinCostClimbingStairs_746 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minCostClimbingStairs(int[] cost) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

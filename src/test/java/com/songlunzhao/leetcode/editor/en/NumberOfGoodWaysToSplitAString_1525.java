@@ -70,7 +70,7 @@ public class NumberOfGoodWaysToSplitAString_1525 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int numSplits(String s) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

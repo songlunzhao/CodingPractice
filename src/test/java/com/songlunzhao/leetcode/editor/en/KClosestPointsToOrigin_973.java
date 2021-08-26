@@ -56,7 +56,7 @@ public class KClosestPointsToOrigin_973 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[][] kClosest(int[][] points, int k) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

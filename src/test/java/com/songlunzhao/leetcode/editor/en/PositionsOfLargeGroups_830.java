@@ -61,6 +61,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class PositionsOfLargeGroups_830 {
 
     
@@ -73,7 +75,7 @@ public class PositionsOfLargeGroups_830 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<List<Integer>> largeGroupPositions(String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

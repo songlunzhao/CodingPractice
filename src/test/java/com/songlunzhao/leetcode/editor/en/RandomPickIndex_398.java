@@ -54,7 +54,7 @@ public class RandomPickIndex_398 {
     @Test
     public void testRandomPickIndex(){
        Solution solution = new RandomPickIndex_398()
-                        .new Solution();
+                        .new Solution(null);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -64,7 +64,7 @@ class Solution {
     }
     
     public int pick(int target) {
-        
+        return 0;
     }
 }
 

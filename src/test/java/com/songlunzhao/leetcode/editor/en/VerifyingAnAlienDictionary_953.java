@@ -63,7 +63,7 @@ public class VerifyingAnAlienDictionary_953 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isAlienSorted(String[] words, String order) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

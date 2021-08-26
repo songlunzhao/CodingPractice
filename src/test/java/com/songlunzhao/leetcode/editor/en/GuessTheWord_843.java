@@ -75,9 +75,9 @@ public class GuessTheWord_843 {
  * }
  */
 class Solution {
-    public void findSecretWord(String[] wordlist, Master master) {
-        
-    }
+//    public void findSecretWord(String[] wordlist, Master master) {
+//
+//    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

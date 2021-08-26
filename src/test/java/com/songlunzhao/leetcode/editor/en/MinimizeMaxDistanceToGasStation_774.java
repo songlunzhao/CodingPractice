@@ -46,7 +46,7 @@ public class MinimizeMaxDistanceToGasStation_774 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public double minmaxGasDist(int[] stations, int k) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -75,6 +75,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class SentenceSimilarityIi_737 {
 
     
@@ -87,7 +89,7 @@ public class SentenceSimilarityIi_737 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean areSentencesSimilarTwo(String[] sentence1, String[] sentence2, List<List<String>> similarPairs) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

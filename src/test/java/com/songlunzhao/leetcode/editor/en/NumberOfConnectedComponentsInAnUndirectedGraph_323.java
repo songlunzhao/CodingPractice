@@ -49,7 +49,7 @@ public class NumberOfConnectedComponentsInAnUndirectedGraph_323 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int countComponents(int n, int[][] edges) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

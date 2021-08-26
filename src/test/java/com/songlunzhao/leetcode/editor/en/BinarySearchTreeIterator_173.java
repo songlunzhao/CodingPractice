@@ -62,6 +62,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
 public class BinarySearchTreeIterator_173 {
@@ -70,8 +71,8 @@ public class BinarySearchTreeIterator_173 {
     
     @Test
     public void testBinarySearchTreeIterator(){
-       Solution solution = new BinarySearchTreeIterator_173()
-                        .new Solution();
+        BSTIterator solution = new BinarySearchTreeIterator_173()
+                        .new BSTIterator(null);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 /**
@@ -96,11 +97,11 @@ class BSTIterator {
     }
     
     public int next() {
-        
+        return 0;
     }
     
     public boolean hasNext() {
-        
+        return true;
     }
 }
 

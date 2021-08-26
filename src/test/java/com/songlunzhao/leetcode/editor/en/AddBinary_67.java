@@ -35,7 +35,7 @@ public class AddBinary_67 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String addBinary(String a, String b) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

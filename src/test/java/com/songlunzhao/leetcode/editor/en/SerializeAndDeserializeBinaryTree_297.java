@@ -54,6 +54,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
 public class SerializeAndDeserializeBinaryTree_297 {
@@ -62,8 +63,8 @@ public class SerializeAndDeserializeBinaryTree_297 {
     
     @Test
     public void testSerializeAndDeserializeBinaryTree(){
-       Solution solution = new SerializeAndDeserializeBinaryTree_297()
-                        .new Solution();
+        Codec solution = new SerializeAndDeserializeBinaryTree_297()
+                        .new Codec();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 /**
@@ -79,12 +80,12 @@ public class Codec {
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        
+        return null;
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        
+        return null;
     }
 }
 

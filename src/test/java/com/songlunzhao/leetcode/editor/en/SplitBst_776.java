@@ -37,6 +37,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
 public class SplitBst_776 {
@@ -66,7 +67,7 @@ public class SplitBst_776 {
  */
 class Solution {
     public TreeNode[] splitBST(TreeNode root, int target) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

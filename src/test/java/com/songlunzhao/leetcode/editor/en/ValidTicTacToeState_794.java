@@ -77,7 +77,7 @@ public class ValidTicTacToeState_794 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean validTicTacToe(String[] board) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

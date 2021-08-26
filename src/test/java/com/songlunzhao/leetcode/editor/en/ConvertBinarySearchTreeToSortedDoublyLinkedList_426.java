@@ -64,6 +64,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.Node;
 import org.testng.annotations.Test;
 
 public class ConvertBinarySearchTreeToSortedDoublyLinkedList_426 {
@@ -99,7 +100,7 @@ class Node {
 
 class Solution {
     public Node treeToDoublyList(Node root) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

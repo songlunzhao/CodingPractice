@@ -65,7 +65,7 @@ public class GlobalAndLocalInversions_775 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isIdealPermutation(int[] nums) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

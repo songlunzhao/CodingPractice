@@ -73,7 +73,7 @@ public class FindSmallestLetterGreaterThanTarget_744 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
-        
+        return 'a';
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

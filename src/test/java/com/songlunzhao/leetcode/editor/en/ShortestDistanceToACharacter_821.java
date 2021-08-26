@@ -57,7 +57,7 @@ public class ShortestDistanceToACharacter_821 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] shortestToChar(String s, char c) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

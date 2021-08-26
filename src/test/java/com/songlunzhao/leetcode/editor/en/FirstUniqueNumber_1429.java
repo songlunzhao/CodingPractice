@@ -89,8 +89,8 @@ public class FirstUniqueNumber_1429 {
     
     @Test
     public void testFirstUniqueNumber(){
-       Solution solution = new FirstUniqueNumber_1429()
-                        .new Solution();
+        FirstUnique solution = new FirstUniqueNumber_1429()
+                        .new FirstUnique(null);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class FirstUnique {
@@ -100,7 +100,7 @@ class FirstUnique {
     }
     
     public int showFirstUnique() {
-        
+        return 0;
     }
     
     public void add(int value) {

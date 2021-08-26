@@ -71,7 +71,7 @@ public class IntervalListIntersections_986 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

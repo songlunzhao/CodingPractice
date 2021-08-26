@@ -56,7 +56,7 @@ public class SplitArrayLargestSum_410 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int splitArray(int[] nums, int m) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -36,6 +36,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
 public class MaximumAverageSubtree_1120 {
@@ -65,7 +66,7 @@ public class MaximumAverageSubtree_1120 {
  */
 class Solution {
     public double maximumAverageSubtree(TreeNode root) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

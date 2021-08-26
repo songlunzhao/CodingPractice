@@ -63,7 +63,7 @@ public class SmallestRotationWithHighestScore_798 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int bestRotation(int[] nums) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

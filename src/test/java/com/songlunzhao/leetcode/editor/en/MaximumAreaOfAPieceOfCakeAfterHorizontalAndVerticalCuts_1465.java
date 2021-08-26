@@ -71,7 +71,7 @@ public class MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts_1465 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maxArea(int h, int w, int[] horizontalCuts, int[] verticalCuts) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

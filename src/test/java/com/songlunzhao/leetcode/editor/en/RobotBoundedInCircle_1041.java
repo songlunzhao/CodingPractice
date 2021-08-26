@@ -65,7 +65,7 @@ public class RobotBoundedInCircle_1041 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isRobotBounded(String instructions) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

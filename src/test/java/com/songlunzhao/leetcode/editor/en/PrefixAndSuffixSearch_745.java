@@ -51,8 +51,8 @@ public class PrefixAndSuffixSearch_745 {
     
     @Test
     public void testPrefixAndSuffixSearch(){
-       Solution solution = new PrefixAndSuffixSearch_745()
-                        .new Solution();
+        WordFilter solution = new PrefixAndSuffixSearch_745()
+                        .new WordFilter(null);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class WordFilter {
@@ -62,7 +62,7 @@ class WordFilter {
     }
     
     public int f(String prefix, String suffix) {
-        
+        return 1;
     }
 }
 

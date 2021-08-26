@@ -67,7 +67,7 @@ public class GoatLatin_824 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String toGoatLatin(String sentence) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

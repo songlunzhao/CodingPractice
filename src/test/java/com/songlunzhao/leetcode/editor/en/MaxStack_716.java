@@ -67,8 +67,8 @@ public class MaxStack_716 {
     
     @Test
     public void testMaxStack(){
-       Solution solution = new MaxStack_716()
-                        .new Solution();
+        MaxStack solution = new MaxStack_716()
+                        .new MaxStack();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class MaxStack {
@@ -83,19 +83,19 @@ class MaxStack {
     }
     
     public int pop() {
-        
+        return 0;
     }
     
     public int top() {
-        
+        return 0;
     }
     
     public int peekMax() {
-        
+        return 0;
     }
     
     public int popMax() {
-        
+        return 0;
     }
 }
 

@@ -56,6 +56,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.Node;
 import org.testng.annotations.Test;
 
 public class InsertIntoASortedCircularLinkedList_708 {
@@ -89,7 +90,7 @@ class Node {
 
 class Solution {
     public Node insert(Node head, int insertVal) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -55,6 +55,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class SubdomainVisitCount_811 {
 
     
@@ -67,7 +69,7 @@ public class SubdomainVisitCount_811 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> subdomainVisits(String[] cpdomains) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -59,7 +59,7 @@ public class LongestIncreasingPathInAMatrix_329 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int longestIncreasingPath(int[][] matrix) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

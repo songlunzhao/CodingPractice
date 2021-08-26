@@ -62,7 +62,7 @@ public class MinimumDeletionsToMakeCharacterFrequenciesUnique_1647 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minDeletions(String s) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

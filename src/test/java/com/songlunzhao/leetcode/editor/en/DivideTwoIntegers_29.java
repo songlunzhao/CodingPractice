@@ -67,7 +67,7 @@ public class DivideTwoIntegers_29 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int divide(int dividend, int divisor) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

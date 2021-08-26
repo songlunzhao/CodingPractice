@@ -40,7 +40,10 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class FindDuplicateSubtrees_652 {
 
@@ -69,7 +72,7 @@ public class FindDuplicateSubtrees_652 {
  */
 class Solution {
     public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

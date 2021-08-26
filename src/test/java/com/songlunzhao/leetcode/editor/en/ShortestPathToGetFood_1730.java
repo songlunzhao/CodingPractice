@@ -89,7 +89,7 @@ public class ShortestPathToGetFood_1730 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int getFood(char[][] grid) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

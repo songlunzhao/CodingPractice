@@ -35,7 +35,7 @@ public class MeetingRoomsIi_253 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

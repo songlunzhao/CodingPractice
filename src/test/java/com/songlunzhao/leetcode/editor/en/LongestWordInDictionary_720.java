@@ -51,7 +51,7 @@ public class LongestWordInDictionary_720 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String longestWord(String[] words) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -57,7 +57,7 @@ public class ReachingPoints_780 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean reachingPoints(int sx, int sy, int tx, int ty) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

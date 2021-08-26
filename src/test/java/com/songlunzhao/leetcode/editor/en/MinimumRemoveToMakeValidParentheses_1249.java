@@ -69,7 +69,7 @@ public class MinimumRemoveToMakeValidParentheses_1249 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String minRemoveToMakeValid(String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

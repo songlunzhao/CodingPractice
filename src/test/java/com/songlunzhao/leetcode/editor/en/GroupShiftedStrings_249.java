@@ -38,6 +38,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class GroupShiftedStrings_249 {
 
     
@@ -50,7 +52,7 @@ public class GroupShiftedStrings_249 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<List<String>> groupStrings(String[] strings) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

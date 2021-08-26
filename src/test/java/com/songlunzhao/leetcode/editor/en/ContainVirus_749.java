@@ -82,7 +82,7 @@ public class ContainVirus_749 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int containVirus(int[][] isInfected) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

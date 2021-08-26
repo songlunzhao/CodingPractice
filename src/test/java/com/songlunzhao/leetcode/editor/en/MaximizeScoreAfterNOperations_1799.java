@@ -69,7 +69,7 @@ public class MaximizeScoreAfterNOperations_1799 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maxScore(int[] nums) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

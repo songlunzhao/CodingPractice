@@ -74,7 +74,7 @@ public class UniqueMorseCodeWords_804 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int uniqueMorseRepresentations(String[] words) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

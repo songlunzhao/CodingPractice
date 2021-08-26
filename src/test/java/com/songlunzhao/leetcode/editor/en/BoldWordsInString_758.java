@@ -53,7 +53,7 @@ public class BoldWordsInString_758 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String boldWords(String[] words, String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

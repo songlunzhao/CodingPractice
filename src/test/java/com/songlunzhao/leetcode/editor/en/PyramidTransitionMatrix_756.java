@@ -56,6 +56,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class PyramidTransitionMatrix_756 {
 
     
@@ -68,7 +70,7 @@ public class PyramidTransitionMatrix_756 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean pyramidTransition(String bottom, List<String> allowed) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

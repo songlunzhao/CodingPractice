@@ -75,6 +75,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class IpToCidr_751 {
 
     
@@ -87,7 +89,7 @@ public class IpToCidr_751 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> ipToCIDR(String ip, int n) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

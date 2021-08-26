@@ -30,6 +30,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
 public class ClosestBinarySearchTreeValue_270 {
@@ -59,7 +60,7 @@ public class ClosestBinarySearchTreeValue_270 {
  */
 class Solution {
     public int closestValue(TreeNode root, double target) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

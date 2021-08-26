@@ -114,6 +114,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class ExclusiveTimeOfFunctions_636 {
 
     
@@ -126,7 +128,7 @@ public class ExclusiveTimeOfFunctions_636 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] exclusiveTime(int n, List<String> logs) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

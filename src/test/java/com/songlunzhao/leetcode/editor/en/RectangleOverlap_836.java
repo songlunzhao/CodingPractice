@@ -48,7 +48,7 @@ public class RectangleOverlap_836 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

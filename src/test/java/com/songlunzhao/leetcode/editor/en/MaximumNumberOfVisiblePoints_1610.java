@@ -68,6 +68,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class MaximumNumberOfVisiblePoints_1610 {
 
     
@@ -80,7 +82,7 @@ public class MaximumNumberOfVisiblePoints_1610 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int visiblePoints(List<List<Integer>> points, int angle, List<Integer> location) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

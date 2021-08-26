@@ -88,14 +88,16 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class DesignSearchAutocompleteSystem_642 {
 
     
     
     @Test
     public void testDesignSearchAutocompleteSystem(){
-       Solution solution = new DesignSearchAutocompleteSystem_642()
-                        .new Solution();
+        AutocompleteSystem solution = new DesignSearchAutocompleteSystem_642()
+                        .new AutocompleteSystem(null,null);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class AutocompleteSystem {
@@ -105,7 +107,7 @@ class AutocompleteSystem {
     }
     
     public List<String> input(char c) {
-        
+        return null;
     }
 }
 

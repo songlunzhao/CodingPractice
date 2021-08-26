@@ -67,7 +67,7 @@ public class SoupServings_808 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public double soupServings(int n) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

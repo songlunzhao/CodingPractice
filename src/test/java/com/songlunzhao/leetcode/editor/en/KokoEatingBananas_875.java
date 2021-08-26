@@ -61,7 +61,7 @@ public class KokoEatingBananas_875 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

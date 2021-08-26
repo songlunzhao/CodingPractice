@@ -55,8 +55,8 @@ public class MinStack_155 {
     
     @Test
     public void testMinStack(){
-       Solution solution = new MinStack_155()
-                        .new Solution();
+        MinStack solution = new MinStack_155()
+                        .new MinStack();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class MinStack {
@@ -75,11 +75,11 @@ class MinStack {
     }
     
     public int top() {
-        
+        return 0;
     }
     
     public int getMin() {
-        
+        return 0;
     }
 }
 

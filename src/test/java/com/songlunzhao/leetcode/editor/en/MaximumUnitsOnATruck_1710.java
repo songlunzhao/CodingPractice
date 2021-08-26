@@ -61,7 +61,7 @@ public class MaximumUnitsOnATruck_1710 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maximumUnits(int[][] boxTypes, int truckSize) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -53,7 +53,7 @@ public class DecodeString_394 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String decodeString(String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

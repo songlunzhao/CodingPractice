@@ -48,8 +48,8 @@ public class SnapshotArray_1146 {
     
     @Test
     public void testSnapshotArray(){
-       Solution solution = new SnapshotArray_1146()
-                        .new Solution();
+        SnapshotArray solution = new SnapshotArray_1146()
+                        .new SnapshotArray(0);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class SnapshotArray {
@@ -63,11 +63,11 @@ class SnapshotArray {
     }
     
     public int snap() {
-        
+        return 0;
     }
     
     public int get(int index, int snap_id) {
-        
+        return 0;
     }
 }
 

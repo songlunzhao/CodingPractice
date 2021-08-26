@@ -47,6 +47,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class LetterCasePermutation_784 {
 
     
@@ -59,7 +61,7 @@ public class LetterCasePermutation_784 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> letterCasePermutation(String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

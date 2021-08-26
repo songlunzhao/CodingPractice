@@ -85,6 +85,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class TextJustification_68 {
 
     
@@ -97,7 +99,7 @@ public class TextJustification_68 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> fullJustify(String[] words, int maxWidth) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

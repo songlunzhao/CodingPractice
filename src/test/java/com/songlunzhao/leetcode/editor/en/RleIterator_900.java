@@ -69,8 +69,8 @@ public class RleIterator_900 {
     
     @Test
     public void testRleIterator(){
-       Solution solution = new RleIterator_900()
-                        .new Solution();
+        RLEIterator solution = new RleIterator_900()
+                        .new RLEIterator(null);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class RLEIterator {
@@ -80,7 +80,7 @@ class RLEIterator {
     }
     
     public int next(int n) {
-        
+        return 1;
     }
 }
 

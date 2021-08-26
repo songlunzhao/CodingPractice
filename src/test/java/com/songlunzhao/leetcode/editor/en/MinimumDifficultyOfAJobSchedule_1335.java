@@ -80,7 +80,7 @@ public class MinimumDifficultyOfAJobSchedule_1335 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minDifficulty(int[] jobDifficulty, int d) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

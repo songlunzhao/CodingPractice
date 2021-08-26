@@ -45,6 +45,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.ListNode;
 import org.testng.annotations.Test;
 
 public class SplitLinkedListInParts_725 {
@@ -69,7 +70,7 @@ public class SplitLinkedListInParts_725 {
  */
 class Solution {
     public ListNode[] splitListToParts(ListNode head, int k) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

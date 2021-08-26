@@ -61,8 +61,8 @@ public class DotProductOfTwoSparseVectors_1570 {
     
     @Test
     public void testDotProductOfTwoSparseVectors(){
-       Solution solution = new DotProductOfTwoSparseVectors_1570()
-                        .new Solution();
+        SparseVector solution = new DotProductOfTwoSparseVectors_1570()
+                        .new SparseVector(null);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class SparseVector {
@@ -73,7 +73,7 @@ class SparseVector {
     
 	// Return the dotProduct of two sparse vectors
     public int dotProduct(SparseVector vec) {
-        
+        return 0;
     }
 }
 

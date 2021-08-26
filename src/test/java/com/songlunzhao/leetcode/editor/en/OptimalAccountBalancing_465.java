@@ -59,7 +59,7 @@ public class OptimalAccountBalancing_465 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minTransfers(int[][] transactions) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

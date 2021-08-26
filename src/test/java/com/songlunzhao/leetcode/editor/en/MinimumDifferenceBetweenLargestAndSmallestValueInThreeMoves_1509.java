@@ -61,7 +61,7 @@ public class MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves_1509 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minDifference(int[] nums) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

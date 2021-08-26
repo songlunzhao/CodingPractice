@@ -70,9 +70,9 @@ class Interval {
 */
 
 class Solution {
-    public List<Interval> employeeFreeTime(List<List<Interval>> schedule) {
-        
-    }
+//    public List<Interval> employeeFreeTime(List<List<Interval>> schedule) {
+//
+//    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

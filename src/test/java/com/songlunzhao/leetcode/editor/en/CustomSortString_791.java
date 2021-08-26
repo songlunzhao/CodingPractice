@@ -55,7 +55,7 @@ public class CustomSortString_791 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String customSortString(String order, String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

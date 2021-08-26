@@ -70,7 +70,7 @@ public class SentenceScreenFitting_418 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int wordsTyping(String[] sentence, int rows, int cols) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

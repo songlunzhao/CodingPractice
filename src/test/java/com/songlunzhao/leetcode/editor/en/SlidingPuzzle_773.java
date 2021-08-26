@@ -76,7 +76,7 @@ public class SlidingPuzzle_773 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int slidingPuzzle(int[][] board) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -67,14 +67,16 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class DesignInMemoryFileSystem_588 {
 
     
     
     @Test
     public void testDesignInMemoryFileSystem(){
-       Solution solution = new DesignInMemoryFileSystem_588()
-                        .new Solution();
+        FileSystem solution = new DesignInMemoryFileSystem_588()
+                        .new FileSystem();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class FileSystem {
@@ -84,7 +86,7 @@ class FileSystem {
     }
     
     public List<String> ls(String path) {
-        
+        return null;
     }
     
     public void mkdir(String path) {
@@ -96,7 +98,7 @@ class FileSystem {
     }
     
     public String readContentFromFile(String filePath) {
-        
+        return null;
     }
 }
 

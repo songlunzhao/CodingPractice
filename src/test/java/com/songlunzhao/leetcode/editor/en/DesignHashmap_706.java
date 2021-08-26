@@ -56,8 +56,8 @@ public class DesignHashmap_706 {
     
     @Test
     public void testDesignHashmap(){
-       Solution solution = new DesignHashmap_706()
-                        .new Solution();
+        MyHashMap solution = new DesignHashmap_706()
+                        .new MyHashMap();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class MyHashMap {
@@ -74,7 +74,7 @@ class MyHashMap {
     
     /** Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key */
     public int get(int key) {
-        
+        return 0;
     }
     
     /** Removes the mapping of the specified value key if this map contains a mapping for the key */

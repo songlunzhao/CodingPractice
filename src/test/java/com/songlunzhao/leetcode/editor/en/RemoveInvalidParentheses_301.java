@@ -40,6 +40,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class RemoveInvalidParentheses_301 {
 
     
@@ -52,7 +54,7 @@ public class RemoveInvalidParentheses_301 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> removeInvalidParentheses(String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

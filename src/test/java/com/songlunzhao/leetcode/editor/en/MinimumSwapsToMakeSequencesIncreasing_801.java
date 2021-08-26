@@ -59,7 +59,7 @@ public class MinimumSwapsToMakeSequencesIncreasing_801 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minSwap(int[] nums1, int[] nums2) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -70,7 +70,7 @@ public class ReplaceAllSToAvoidConsecutiveRepeatingCharacters_1576 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String modifyString(String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

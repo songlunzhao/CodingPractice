@@ -40,7 +40,7 @@ public class DailyTemperatures_739 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

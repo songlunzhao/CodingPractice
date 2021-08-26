@@ -49,7 +49,7 @@ public class NumberOfSubarraysWithBoundedMaximum_795 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int numSubarrayBoundedMax(int[] nums, int left, int right) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

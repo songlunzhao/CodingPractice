@@ -51,7 +51,7 @@ public class SetIntersectionSizeAtLeastTwo_757 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int intersectionSizeTwo(int[][] intervals) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

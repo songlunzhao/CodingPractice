@@ -63,6 +63,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class AccountsMerge_721 {
 
     
@@ -75,7 +77,7 @@ public class AccountsMerge_721 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

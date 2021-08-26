@@ -68,7 +68,7 @@ public class MinimumCostToMergeStones_1000 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int mergeStones(int[] stones, int k) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -73,7 +73,7 @@ public class SwapAdjacentInLrString_777 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean canTransform(String start, String end) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

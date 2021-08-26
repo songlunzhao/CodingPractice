@@ -58,7 +58,7 @@ public class CouplesHoldingHands_765 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minSwapsCouples(int[] row) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

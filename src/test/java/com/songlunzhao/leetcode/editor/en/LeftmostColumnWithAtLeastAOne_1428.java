@@ -97,9 +97,9 @@ public class LeftmostColumnWithAtLeastAOne_1428 {
  */
 
 class Solution {
-    public int leftMostColumnWithOne(BinaryMatrix binaryMatrix) {
-        
-    }
+//    public int leftMostColumnWithOne(BinaryMatrix binaryMatrix) {
+//
+//    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

@@ -76,7 +76,7 @@ public class KThSymbolInGrammar_779 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int kthGrammar(int n, int k) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

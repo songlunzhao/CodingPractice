@@ -46,7 +46,7 @@ public class LeastNumberOfUniqueIntegersAfterKRemovals_1481 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int findLeastNumOfUniqueInts(int[] arr, int k) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

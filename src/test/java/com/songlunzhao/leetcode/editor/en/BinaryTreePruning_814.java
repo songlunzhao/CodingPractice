@@ -41,6 +41,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
 public class BinaryTreePruning_814 {
@@ -70,7 +71,7 @@ public class BinaryTreePruning_814 {
  */
 class Solution {
     public TreeNode pruneTree(TreeNode root) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

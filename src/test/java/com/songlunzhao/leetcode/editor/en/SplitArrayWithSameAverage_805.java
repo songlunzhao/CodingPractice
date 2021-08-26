@@ -51,7 +51,7 @@ public class SplitArrayWithSameAverage_805 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean splitArraySameAverage(int[] nums) {
-        
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

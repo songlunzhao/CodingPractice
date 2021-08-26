@@ -63,8 +63,8 @@ public class LoggerRateLimiter_359 {
     
     @Test
     public void testLoggerRateLimiter(){
-       Solution solution = new LoggerRateLimiter_359()
-                        .new Solution();
+        Logger solution = new LoggerRateLimiter_359()
+                        .new Logger();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Logger {
@@ -78,7 +78,7 @@ class Logger {
         If this method returns false, the message will not be printed.
         The timestamp is in seconds granularity. */
     public boolean shouldPrintMessage(int timestamp, String message) {
-        
+        return true;
     }
 }
 

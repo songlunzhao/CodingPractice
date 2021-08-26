@@ -66,7 +66,7 @@ public class MostProfitAssigningWork_826 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

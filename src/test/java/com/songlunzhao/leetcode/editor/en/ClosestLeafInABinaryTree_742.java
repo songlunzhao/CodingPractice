@@ -46,6 +46,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
 public class ClosestLeafInABinaryTree_742 {
@@ -75,7 +76,7 @@ public class ClosestLeafInABinaryTree_742 {
  */
 class Solution {
     public int findClosestLeaf(TreeNode root, int k) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

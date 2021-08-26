@@ -115,6 +115,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import fackbook.Reader4;
 import org.testng.annotations.Test;
 
 public class ReadNCharactersGivenRead4IiCallMultipleTimes_158 {
@@ -139,7 +140,7 @@ public class Solution extends Reader4 {
      * @return    The number of actual characters read
      */
     public int read(char[] buf, int n) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

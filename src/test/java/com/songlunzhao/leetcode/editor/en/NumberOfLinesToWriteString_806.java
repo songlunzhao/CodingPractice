@@ -67,7 +67,7 @@ public class NumberOfLinesToWriteString_806 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] numberOfLines(int[] widths, String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

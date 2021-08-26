@@ -94,7 +94,7 @@ public class BricksFallingWhenHit_803 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] hitBricks(int[][] grid, int[][] hits) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

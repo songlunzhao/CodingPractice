@@ -64,7 +64,7 @@ public class MinimumDeletionCostToAvoidRepeatingLetters_1578 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minCost(String s, int[] cost) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -35,6 +35,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
 public class DiameterOfBinaryTree_543 {
@@ -64,7 +65,7 @@ public class DiameterOfBinaryTree_543 {
  */
 class Solution {
     public int diameterOfBinaryTree(TreeNode root) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

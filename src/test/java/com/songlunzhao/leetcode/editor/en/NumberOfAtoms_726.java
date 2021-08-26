@@ -89,7 +89,7 @@ public class NumberOfAtoms_726 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String countOfAtoms(String formula) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -82,7 +82,7 @@ public class FindAndReplaceInString_833 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String findReplaceString(String s, int[] indices, String[] sources, String[] targets) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

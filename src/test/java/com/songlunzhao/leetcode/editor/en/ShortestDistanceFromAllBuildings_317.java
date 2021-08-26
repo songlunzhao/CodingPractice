@@ -74,7 +74,7 @@ public class ShortestDistanceFromAllBuildings_317 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int shortestDistance(int[][] grid) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

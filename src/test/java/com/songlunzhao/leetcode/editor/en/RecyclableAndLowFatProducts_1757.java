@@ -58,8 +58,8 @@ public class RecyclableAndLowFatProducts_1757 {
     
     @Test
     public void testRecyclableAndLowFatProducts(){
-       Solution solution = new RecyclableAndLowFatProducts_1757()
-                        .new Solution();
+//       Solution solution = new RecyclableAndLowFatProducts_1757()
+//                        .new Solution();
     }
     //There is no code of Java type for this problem
 }

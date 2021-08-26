@@ -38,7 +38,7 @@ public class ReorganizeString_767 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String reorganizeString(String s) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

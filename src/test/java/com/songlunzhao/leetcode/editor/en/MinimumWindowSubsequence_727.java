@@ -52,7 +52,7 @@ public class MinimumWindowSubsequence_727 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String minWindow(String s1, String s2) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

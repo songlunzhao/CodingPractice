@@ -34,6 +34,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class ExpressionAddOperators_282 {
 
     
@@ -46,7 +48,7 @@ public class ExpressionAddOperators_282 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> addOperators(String num, int target) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

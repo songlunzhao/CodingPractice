@@ -40,6 +40,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.ListNode;
 import org.testng.annotations.Test;
 
 public class LinkedListComponents_817 {
@@ -64,7 +65,7 @@ public class LinkedListComponents_817 {
  */
 class Solution {
     public int numComponents(ListNode head, int[] nums) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

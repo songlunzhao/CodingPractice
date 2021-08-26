@@ -67,6 +67,7 @@
 
 
 package com.songlunzhao.leetcode.editor.en;
+import com.songlunzhao.leetcode.editor.en.common.Node;
 import org.testng.annotations.Test;
 
 public class SerializeAndDeserializeNAryTree_428 {
@@ -75,8 +76,8 @@ public class SerializeAndDeserializeNAryTree_428 {
     
     @Test
     public void testSerializeAndDeserializeNAryTree(){
-       Solution solution = new SerializeAndDeserializeNAryTree_428()
-                        .new Solution();
+        Codec solution = new SerializeAndDeserializeNAryTree_428()
+                        .new Codec();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 /*
@@ -101,12 +102,12 @@ class Node {
 class Codec {
     // Encodes a tree to a single string.
     public String serialize(Node root) {
-        
+        return null;
     }
 	
     // Decodes your encoded data to tree.
     public Node deserialize(String data) {
-        
+        return null;
     }
 }
 
