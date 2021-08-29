@@ -56,7 +56,9 @@ import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class BinaryTreePreorderTraversal_144 {
 
@@ -86,10 +88,24 @@ public class BinaryTreePreorderTraversal_144 {
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
-        preorderTraversal(root, ans);
+//        preorderTraversal(root, ans);
+        preorderTraversal(root,ans);
         return ans;
     }
 
+    private void preorderTraversalQueue(TreeNode root, List<Integer> ans) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            TreeNode node = queue.poll();
+            if(node!=null) {
+                ans.add(node.val);
+                queue.add(node.left);
+                queue.add(node.right);
+            }
+
+        }
+    }
     private void preorderTraversal(TreeNode root, List<Integer> ans){
         if(root==null) return;
         ans.add(root.val);

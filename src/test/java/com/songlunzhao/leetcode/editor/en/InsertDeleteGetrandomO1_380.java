@@ -57,10 +57,10 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.*;
+
 public class InsertDeleteGetrandomO1_380 {
 
-    
-    
     @Test
     public void testInsertDeleteGetrandomO1(){
         RandomizedSet solution = new InsertDeleteGetrandomO1_380()
@@ -69,23 +69,55 @@ public class InsertDeleteGetrandomO1_380 {
     //leetcode submit region begin(Prohibit modification and deletion)
 class RandomizedSet {
 
-    /** Initialize your data structure here. */
+        //key- inserted value, value-index of inserted value
+        Map<Integer,Integer> valueIdxMap = new HashMap<>();
+        //values
+        List<Integer> valueList = new ArrayList<>();
+        Random random = new Random();
+        /** Initialize your data structure here. */
     public RandomizedSet() {
         
     }
     
     /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
     public boolean insert(int val) {
+        if(valueIdxMap.containsKey(val)){
+            return false;
+        }
+        int idx = valueList.size();
+        valueIdxMap.put(val,idx);
+        valueList.add(val);
         return true;
     }
     
     /** Removes a value from the set. Returns true if the set contained the specified element. */
     public boolean remove(int val) {
+        if(!valueIdxMap.containsKey(val)){
+            return false;
+        }
+        int idx = valueIdxMap.get(val);
+        int lastIdx = valueList.size()-1;
+        if(idx==lastIdx){
+            valueList.remove(lastIdx);
+            valueIdxMap.remove(val);
+        } else {
+            //swap lastIdx value with idx value
+            int val1 = valueList.get(lastIdx);
+            valueIdxMap.put(val1, idx);
+            valueIdxMap.remove(val);
+            valueList.set(idx,val1);
+            valueList.remove(lastIdx);
+        }
         return true;
     }
     
     /** Get a random element from the set. */
     public int getRandom() {
+
+        if(valueIdxMap.size()>0) {
+            int idx = random.nextInt(valueIdxMap.size());
+            return valueList.get(idx);
+        }
         return 0;
     }
 }

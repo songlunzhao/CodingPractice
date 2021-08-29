@@ -4,18 +4,16 @@
 
 package com.songlunzhao.leetcode.editor.en;
 
-import com.songlunzhao.leetcode.editor.en.common.ListNode;
-import com.songlunzhao.leetcode.editor.en.common.PrintUtils;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class RollingDice_ {
+public class Indeed_RollingDice_ {
     @Test
     public void testRRollDice() {
-        RollingDice_.Solution solution = new RollingDice_()
+        Indeed_RollingDice_.Solution solution = new Indeed_RollingDice_()
                 .new Solution();
         int n=14;
         List<List<Integer>>ans=solution.rollDice(n);

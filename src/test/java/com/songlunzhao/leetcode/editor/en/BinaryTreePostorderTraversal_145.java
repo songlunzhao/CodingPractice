@@ -57,6 +57,7 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class BinaryTreePostorderTraversal_145 {
 
@@ -86,10 +87,62 @@ public class BinaryTreePostorderTraversal_145 {
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
-        postorderTraversal(root, ans);
+//        postorderTraversal(root, ans);
+//        postorderTraversalStack(root, ans);
+        postorderTraversal2Stack(root, ans);
         return ans;
     }
 
+    private void postorderTraversal2Stack(TreeNode root, List<Integer> ans) {
+        Stack<TreeNode> stack = new Stack<>();
+        Stack<TreeNode> path = new Stack<>();
+        if(root==null) return;
+        stack.push(root);
+        while(!stack.isEmpty()){
+            root = stack.peek();
+            if(!path.isEmpty() && path.peek()==root){
+                ans.add(root.val);
+                path.pop();
+                stack.pop();
+            } else {
+                path.push(root);
+                if(root.right!=null){
+                    stack.push(root.right);
+                }
+                if(root.left!=null){
+                    stack.push(root.left);
+                }
+            }
+        }
+
+    }
+
+    private void postorderTraversalStack(TreeNode root, List<Integer> ans){
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode pre = null;
+
+        while(root!=null || !stack.isEmpty()){
+            if(root!=null){
+                //push all left nodes to stack
+                stack.push(root);
+                root = root.left;
+            } else {
+                //reach left leaf, check if the leaf has right child
+                root = stack.peek();
+                if(root.right==null || root.right == pre){
+                    //dosn't have right child, pop leaf and get value
+                    stack.pop();
+                    ans.add(root.val);
+                    pre = root;
+                    root = null; //go back to loop and peek next node
+                } else {
+                    //left leaf has right child, check right child first
+                    //right child will be push to stack
+                    root=root.right;
+                }
+            }
+        }
+    }
     private void postorderTraversal(TreeNode root, List<Integer> ans) {
         if(root==null) return;
         postorderTraversal(root.left, ans);
