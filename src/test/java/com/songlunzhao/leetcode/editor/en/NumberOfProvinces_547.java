@@ -56,9 +56,41 @@ public class NumberOfProvinces_547 {
        Solution solution = new NumberOfProvinces_547()
                         .new Solution();
     }
+
+    /**
+     *
+     * https://blog.csdn.net/xueyingxue001/article/details/52946111
+     *
+     *
+     */
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int findCircleNum(int[][] isConnected) {
+
+        //return getProvincesUsingDFS(isConnected);
+
+        return getProvincesUsingUnionFind(isConnected);
+    }
+
+    private int getProvincesUsingUnionFind(int[][] isConnected){
+        int provinces=0;
+        int[] parent = new int[isConnected.length];
+        //init the parent array, each city use itself as parent
+        for(int i=0; i< parent.length; i++) {
+            parent[i] = i;
+        }
+        //union connected cities
+        connected(isConnected, parent);
+        //count not connected cities
+        for(int i=0; i< parent.length; i++) {
+            if(parent[i] == i) {
+                provinces++;
+            }
+        }
+        return provinces;
+    }
+
+    private int getProvincesUsingDFS(int[][] isConnected){
         int provinces=0;
         //it is a n*n matrix, because there are n cities connected to each other
         //in the matrix, row n shows city n connected to what cities
@@ -72,10 +104,55 @@ class Solution {
             }
         }
         return provinces;
+    }
 
+        /**
+         * 计算连通分量数的另一个方法是使用并查集。初始时，每个城市都属于不同的连通分量。
+         * 遍历矩阵 isConnected，如果两个城市之间有相连关系，则它们属于同一个连通分量，
+         * 对它们进行合并。
+         *
+         * 遍历矩阵 isConnected 的全部元素之后，计算连通分量的总数，即为省份的总数。
+         *
+         *
+         * @param isConnected
+         * @param parent
+         */
+    void connected(int[][]isConnected, int[]parent){
+        for(int i=0; i<isConnected.length; i++){
+            for(int j=0; j< isConnected[i].length && j!=i; j++) {
+                if(isConnected[i][j]==1){
+                    union(parent,i,j);
+                }
+            }
+        }
+    }
+
+    //connect idx1 to idx2 if idx1 & idx2 has same parent(root)
+    public void union(int[]parent, int idx1, int idx2){
+        //node idx1 & node idx2 should have same root node
+        parent[findParent(parent,idx1)] = findParent(parent,idx2);
+    }
+
+        /**
+         * find the parent(root node) of node(idx)
+         * @param parent
+         * @param idx
+         * @return root of node idx
+         */
+    int findParent(int[] parent, int idx){
+        if(parent[idx]!=idx){
+            parent[idx]=findParent(parent,parent[idx]);
+        }
+        return parent[idx];
     }
 
 
+        /**
+         * use DFS to check if 2 cities are connected
+         * @param isConnected
+         * @param visitedCity
+         * @param i -- index of current city
+         */
         void connected(int[][]isConnected, boolean[]visitedCity, int i){
            //go through matrix, mark all cities connected to city i as visited
            for(int j=0;j< isConnected[i].length;j++){

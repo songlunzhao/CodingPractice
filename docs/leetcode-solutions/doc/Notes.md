@@ -1,6 +1,8 @@
 
 # distributed in-memory cache -- hazelcast
 # cache library -- caffeine cache
+
+# Spring annotation - refresh to change config on the fly -- need more work
 # Spring scope
     * singleton:
     * prototype: (create instance every time is used),
@@ -11,6 +13,7 @@
             Only valid in the context of a web-aware Spring ApplicationContext.
     * global-session: This scopes a bean definition to a global HTTP session.
             Only valid in the context of a web-aware Spring ApplicationContext.
+            
 # difference between WebApplicationContext & ApplicationContext
     https://stackoverflow.com/questions/11708967/what-is-the-difference-between-applicationcontext-and-webapplicationcontext-in-s
 
@@ -66,3 +69,32 @@
   Apache Hadoop -- distributed big data system, map-reduce
   Apache Cassandra is a NoSQL database ideal for high-speed, online transactional data, 
   while Hadoop is a big data analytics system that focuses on data warehousing and data lake use cases
+  
+  
+# hibernate 
+ life cycle of entity
+ 
+ ##Transient 
+ -- exists in heap memory. hibernate does not manage transient entity
+ ##Persistent 
+ -- hibernate manage the persistence of persistent entity, object committed will be saved to db 
+ ##Detached 
+ -- detached entity has representation in db. when a hibernate session is closed, the entity becomes detached. 
+ We can use load(),refresh(),merge(),update(),save() to open a new session and re-attach the entity. 
+ ##Removed
+ -- when persistent entity is passed to session's remove method, the hibernate session will remove the entity from session.
+ 
+# Spring AOP 
+https://docs.spring.io/spring-framework/docs/2.5.x/reference/aop.html
+save time UTC in database, how to return time in different timezone without 
+change original code?
+
+create a Aspect class, declare a pointcut method, use @Pointcut method to weave the method to
+different package in original code. @Pointcut supports wildcard match
+https://stackoverflow.com/questions/49884801/wildcard-support-on-package-name-in-spring-aop-pointcut-expression
+
+
+
+
+ 
+  

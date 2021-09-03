@@ -10,6 +10,7 @@ public class PrintUtils <T>{
             System.out.println(Arrays.deepToString(arr));
         }
     }
+
     public void print2DList(List<List<T>> input) {
         for(List<T> objects : input) {
             Object[] arr = objects.toArray();
