@@ -51,7 +51,7 @@ public class ConcatenatedWords_472 {
                         .new Solution();
 
        String[] dict = new String[]{
-               "dogcat","cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"
+               "cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"
        };
        List<String> ans = solution.findAllConcatenatedWordsInADict(dict);
         PrintUtils.printStringList(ans);
@@ -77,61 +77,50 @@ class Solution {
             //construct trie
             TrieNode root = new TrieNode();
             root.children = new HashMap<>();
+            Arrays.sort(words, Comparator.comparingInt(w->w.length()));
             for(String word:words){
-                addToTrie(word,root);
-            }
-            for(String word:words){
-                if(find2WordsInTrie(word, 0, 0, root)){
+                if(word.equals("")) continue;
+                if(isConcatenatedWord(word, root)){
                     result.add(word);
                 }
+                addToTrie(word,root);
             }
             return result;
         }
 
-    public List<String> findAllConcatenatedWordsInADict_DPSolution(String[] words) {
-        List<String> result = new ArrayList<>();
-        Set<String> preWords = new HashSet<>();
-        Arrays.sort(words, new Comparator<String>() {
-            public int compare (String s1, String s2) {
-                return s1.length() - s2.length();
-            }
-        });
-
-        for (int i = 0; i < words.length; i++) {
-            if (matchWord(words[i], preWords)) {
-                result.add(words[i]);
-            }
-            preWords.add(words[i]);
+        boolean isConcatenatedWord(String word, TrieNode root){
+            //-1 not checked, 1 isWord, 0 notWord
+            //the Trie root is a dummy node, so the depth of trie is length +1
+            //the array saved if a word start on idx i is a word in dict
+            int[]isWord = new int[word.length()+1];
+            Arrays.fill(isWord,-1);
+            return dfs(word, isWord, root, 0);
         }
 
-        return result;
+        boolean dfs(String word, int[] isWord, TrieNode root, int begIdx){
+            if(isWord[begIdx]!=-1) return isWord[begIdx]==1; //already checked
+            if(begIdx==word.length()) return true; //reached the end of word
 
-    }
-
-        /**
-         * wordCount -- how many words found before calling this method
-         * @param word
-         * @param beginIdx
-         * @param wordCount
-         * @param root
-         * @return
-         */
-    private boolean find2WordsInTrie(String word, int beginIdx, int wordCount, TrieNode root){
-        TrieNode current = root;
-        for(int i=beginIdx; i<word.length();i++){
-                if(!current.children.containsKey(word.charAt(i))) return false;
-                TrieNode node = current.children.get(word.charAt(i));
-                if(node.isWord){
-                    if(i==word.length()-1){
-                        return wordCount+1>=2; //find word cconcatenated by at lest 2 word
-                    }
-                    if(find2WordsInTrie(word,i+1, wordCount+1, root))
-                        return true;
+            TrieNode cur = root;
+            for(int i=begIdx; i<word.length(); i++){
+                Character c = word.charAt(i);
+                if(!cur.children.containsKey(c)){
+                    isWord[begIdx]=0;
+                    return false;
                 }
-                current=node;
+                cur=cur.children.get(c);
+                if(cur.isWord) {
+                    //find one word, check 2nd word
+                    if(dfs(word, isWord, root, i+1)){
+                        isWord[begIdx]=1;
+                        return true;
+                    }
+                }
             }
+            isWord[begIdx]=0;
             return false;
-    }
+        }
+
     private void addToTrie(String word, TrieNode root) {
         if(word==null || word.length()==0) return;
         for(int i=0; i<word.length(); i++){
@@ -145,23 +134,6 @@ class Solution {
         root.isWord=true;
     }
 
-    boolean matchWord(String word, Set<String> dict) {
-        if (dict.isEmpty()) return false;
-        boolean[] dp = new boolean[word.length() + 1];
-        //dp[i]==true means string ends at index i is good
-        dp[0] = true;
-        for (int i = 1; i <= word.length(); i++) {
-            for (int j = 0; j < i; j++) {
-                if (!dp[j]) continue;
-                if (dict.contains(word.substring(j, i))) {
-                    dp[i] = true;
-                    break;
-                }
-            }
-        }
-        return dp[word.length()];
-
-    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
