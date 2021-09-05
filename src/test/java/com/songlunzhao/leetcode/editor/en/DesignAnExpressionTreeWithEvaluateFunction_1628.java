@@ -82,6 +82,8 @@
 package com.songlunzhao.leetcode.editor.en;
 import org.testng.annotations.Test;
 
+import java.util.Stack;
+
 public class DesignAnExpressionTreeWithEvaluateFunction_1628 {
 
     
@@ -100,6 +102,7 @@ public class DesignAnExpressionTreeWithEvaluateFunction_1628 {
 abstract class Node {
     public abstract int evaluate();
     // define your fields here
+
 };
 
 
@@ -110,8 +113,47 @@ abstract class Node {
  */
 
 class TreeBuilder {
+    class MyNode extends Node {
+        @Override
+        public int evaluate() {
+            Stack<Integer> stack = new Stack<>();
+            int result=0;
+            for(String s: postfix){
+                if(s.matches("[0-9]+")){
+                    stack.push(Integer.valueOf(s));
+                } else {
+                    int i1=stack.pop();
+                    int i2=stack.pop();
+                    switch (s){
+                        case "+":
+                            result=i2+i1;
+                            break;
+                        case "-":
+                            result=i2-i1;
+                            break;
+                        case "*":
+                            result=i2*i1;
+                            break;
+                        case "/":
+                            result=i2/i1;
+
+                    }
+                    stack.push(result);
+                }
+            }
+            return result;
+
+        }
+        String[] postfix;
+        MyNode(String[] postfix) {
+            this.postfix=postfix;
+        }
+    }
     Node buildTree(String[] postfix) {
-        return null;
+
+        MyNode node = new MyNode(postfix);
+
+        return node;
     }
 };
 
