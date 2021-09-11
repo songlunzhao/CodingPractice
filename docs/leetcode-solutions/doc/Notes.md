@@ -2,7 +2,7 @@
 # distributed in-memory cache -- hazelcast
 # cache library -- caffeine cache
 
-# Spring annotation - refresh to change config on the fly -- need more work
+
 # Spring scope
     * singleton:
     * prototype: (create instance every time is used),
@@ -93,8 +93,53 @@ create a Aspect class, declare a pointcut method, use @Pointcut method to weave 
 different package in original code. @Pointcut supports wildcard match
 https://stackoverflow.com/questions/49884801/wildcard-support-on-package-name-in-spring-aop-pointcut-expression
 
+# Spring boot
+# Spring annotation - refresh to change config on the fly -- need more work
+org.springframework.cloud.context.refresh.ContextRefresher
+SmartContextLoader 
+https://www.baeldung.com/java-restart-spring-boot-app
+https://stackoverflow.com/questions/48570314/how-to-switch-spring-profile-at-runtime
 
 
+# Scalability issue
+Scaling the database: 
+• Vertical scaling vs Horizontal scaling 
+• SQL vs NoSQL 
+• Master-slave replication 
+• Read replicas 
+• Consistency models 
+• Database sharding 
+Other talking points: 
+• Keep web tier stateless 
+• Cache data as much as you can 
+• Support multiple data centers 
+• Lose couple components with message queues 
+• Monitor key metrics. For instance, QPS during peak hours and latency while users 
+refreshing their news feed are interesting to monitor.
 
+
+# TODO   
+# Blob store -- Amazon S3 --Amazon Simple Storage Service
+ provides object storage through a web service interface
+ 
+# Java multi-threading -- need work
+
+Race condition -- both threads are "racing" to access/change the data.
+
+# relational db and non-relational db -- pros & cons
+
+# distributed file system, message q, non-relational db, consistant hashing, 
+redis in memory db, hazelcast, what is pre-cache service
+https://www.javacodegeeks.com/2019/02/nosql-databases-cassandra-vs-mongo-vs-redis-db-comparison.html
+
+rabbitmq vs kafka vs redis
+
+
+# master write only db, plus multiple read only slave dbs - read replica, shading strategy on write db
+
+# money data type, 
+oracle Number(13,4)
+mysql Decimal(13,4)
+sqlserver Money
  
   

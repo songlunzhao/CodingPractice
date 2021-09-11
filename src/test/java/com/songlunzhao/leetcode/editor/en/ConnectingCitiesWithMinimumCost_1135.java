@@ -132,7 +132,6 @@ public class ConnectingCitiesWithMinimumCost_1135 {
         void union(int[] parent, int idx1, int idx2) {
             //merge indx1 & idx2 under one root
             parent[findParent(parent, idx1)] = findParent(parent, idx2);
-
         }
 
         //union find with path compression
@@ -140,12 +139,9 @@ public class ConnectingCitiesWithMinimumCost_1135 {
         int findParent(int[] parent, int idx) {
             if (parent[idx] != idx) {
                 parent[idx] = findParent(parent, parent[idx]);
-
             }
-
             return parent[idx];
         }
-
 
     }
 //leetcode submit region end(Prohibit modification and deletion)
