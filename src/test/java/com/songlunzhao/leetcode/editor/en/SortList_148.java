@@ -69,9 +69,9 @@ class Solution {
     public ListNode sortList(ListNode head) {
         if (head == null || head.next == null)
             return head;
-        ListNode mid = getMid(head);
+        ListNode mid = getMidAndBreakList(head);
         ListNode left = sortList(head);
-        ListNode right = sortList(mid);
+        ListNode right = sortList(mid);//mid become new head, pre-mid.next is set to null
         return merge(left, right);
     }
 
@@ -93,15 +93,22 @@ class Solution {
         return dummyHead.next;
     }
 
-    ListNode getMid(ListNode head) {
-        ListNode midPrev = null;
-        while (head != null && head.next != null) {
-            midPrev = (midPrev == null) ? head : midPrev.next;
-            head = head.next.next;
+    /**
+     * get middle and set preMid's next to null
+     * break list into 2 lists
+     * @param head
+     * @return
+     */
+    ListNode getMidAndBreakList(ListNode head) {
+        ListNode fast=head,slow=head,preslow=null;
+        while (fast != null && fast.next != null) {
+            fast=fast.next.next;
+            preslow=slow;
+            slow=slow.next;
+
         }
-        ListNode mid = midPrev.next;
-        midPrev.next = null;
-        return mid;
+        preslow.next=null;
+        return slow;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

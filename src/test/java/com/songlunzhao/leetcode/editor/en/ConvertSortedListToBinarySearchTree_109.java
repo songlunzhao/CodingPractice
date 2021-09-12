@@ -130,8 +130,7 @@ class Solution {
     private ListNode getMedian(ListNode left, ListNode right){
         ListNode slow = left, fast = left;
         while(fast!=right && fast.next!=right){
-            fast=fast.next;
-            fast=fast.next;
+            fast=fast.next.next;
             slow=slow.next;
         }
         return slow;
