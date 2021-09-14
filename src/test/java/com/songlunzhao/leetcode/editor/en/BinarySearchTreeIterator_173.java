@@ -1,5 +1,5 @@
-//Implement the BSTIterator class that represents an iterator over the in-order 
-//traversal of a binary search tree (BST): 
+//Implement the BSTIterator class that represents
+// an iterator over the in-order traversal of a binary search tree (BST):
 //
 // 
 // BSTIterator(TreeNode root) Initializes an object of the BSTIterator class. Th
@@ -65,6 +65,10 @@ package com.songlunzhao.leetcode.editor.en;
 import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 public class BinarySearchTreeIterator_173 {
 
     
@@ -92,16 +96,51 @@ public class BinarySearchTreeIterator_173 {
  */
 class BSTIterator {
 
+    int idx=-1;
+    List<Integer> ans = new ArrayList<>();
+    TreeNode cur;
+    Stack<TreeNode> stack = new Stack<>();
     public BSTIterator(TreeNode root) {
-        
+        if(root==null) return;
+        cur=root;
+//        idx++;
+//        buildList(ans,root);
     }
-    
+
+    private void buildList(List<Integer> ans, TreeNode root) {
+        if (root == null) return;
+        buildList(ans, root.left);
+        ans.add(root.val);
+        buildList(ans,root.right);
+    }
+
+//    public int next() {
+//        int ret = ans.get(idx);
+//        idx++;
+//        return ret;
+//    }
+//
+//    public boolean hasNext() {
+//        return idx>=0 && idx<ans.size();
+//    }
+
+    /**
+     * stack solution
+     * @return
+     */
     public int next() {
-        return 0;
+        while(cur!=null){
+            stack.push(cur);
+            cur=cur.left;
+        }
+        cur=stack.pop();
+        int ret = cur.val;
+        cur=cur.right;
+        return ret;
     }
-    
+
     public boolean hasNext() {
-        return true;
+        return cur!=null || !stack.isEmpty();
     }
 }
 
