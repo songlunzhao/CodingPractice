@@ -64,3 +64,18 @@ rabbitmq vs kafka vs redis
 # database design for non-relational data stores 
 https://www.mongodb.com/nosql-explained/data-modeling
 https://www.mongodb.com/nosql-explained/best-nosql-database
+
+# load balancer strategy -- 
+ 1. round robin - weighted round robin (each server has different weight), dynamic round robin (real time calculation of server weight)
+ 2. least connections - choosing the server with least number of active connections
+ 3. weighted least connections - the number of active connections and relative capacity of the server
+ 4. source ip hash - 
+ 5. url hash
+ 6. least response time - least number of active connections and least average response time is selected
+ 7. least bandwidth method - server consume least bandwidth is selected
+ 8. customer load method
+## application layer algorithm
+ 1. least pending requests
+  
+ 
+ 
