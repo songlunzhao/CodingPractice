@@ -61,10 +61,10 @@ public class WordBreak_139 {
         Solution solution = new WordBreak_139()
                 .new Solution();
         List<String> wordDict = Arrays.asList(new String[]{"leet", "code"});
-        solution.buildTrie(wordDict);
-        assertEquals(solution.searchWord("leet"), true);
-        assertEquals(solution.searchWord("code"), true);
-        assertEquals(solution.searchWord("cod"), false);
+//        solution.buildTrie(wordDict);
+//        assertEquals(solution.searchWord("leet"), true);
+//        assertEquals(solution.searchWord("code"), true);
+//        assertEquals(solution.searchWord("cod"), false);
 
     }
 
@@ -83,6 +83,13 @@ public class WordBreak_139 {
                 insertWord(word, root);
             }
         }
+
+        /**
+         * official solution
+         * @param s
+         * @param wordDict
+         * @return
+         */
         public boolean wordBreak(String s, List<String> wordDict) {
             Set<String> dict = new HashSet<>(wordDict);
             boolean[] dp = new boolean[s.length()+1];
@@ -115,6 +122,12 @@ public class WordBreak_139 {
             return searchWord(word, root);
         }
 
+        /**
+         * this won't work, exceed required time
+         * @param word
+         * @param root
+         * @return
+         */
         public boolean searchWord(String word, Node root){
             if(root.children.containsKey(word.charAt(0))){
                 if(word.length()>1){

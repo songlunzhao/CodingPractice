@@ -54,9 +54,27 @@ Race condition -- both threads are "racing" to access/change the data.
 # distributed file system, message q, non-relational db, consistent hashing, 
 redis in memory db, hazelcast, what is pre-cache service
 https://www.javacodegeeks.com/2019/02/nosql-databases-cassandra-vs-mongo-vs-redis-db-comparison.html
-
 rabbitmq vs kafka vs redis
+##consistent hashing
+1. hash record keys to a integer range, for example (0, power(2,32)-1), that is 0 to the largest integer;
+2. place these integers on a ring.
+3. hash server name or server ip into same integer range, and save the hash value in a list.
+4. when a record comes in, calculate its hash value, 
+go through server list, find the first server that its hash value 
+greater or equals to the record hash value. 
+if record hash value greater than the largest server hash value, 
+assign the record to the first server on the server list.
 
+int findServerId(String recordId){
+    //index -- serverId, value -- serverHashValue
+    int[] serverHashValue = new int[];
+    int recordHashValue = hash(recordId);
+    for(int i=0; i<serverHashValue.length; i++){
+        if(recordHashValue<=serverHashValue[i])
+            return i;
+    }
+    return 0;
+}
 
 # master write only db, plus multiple read only slave dbs - read replica, shading strategy on write db
 

@@ -179,7 +179,7 @@ class Solution {
         //union root of node1 and root of node2
         //root1 = findParent(parent, node1)
         //root2 = findParent(parent, node2)
-        //parent[root1]=parent[root2]
+        //parent[root1]=root2
         //3 statement written in 1 statement as following
         parent[findParent(parent, node1)]=findParent(parent,node2);
     }
