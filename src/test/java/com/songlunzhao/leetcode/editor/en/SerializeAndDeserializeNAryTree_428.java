@@ -1,6 +1,7 @@
-//Serialization is the process of converting a data structure or object into a s
-//equence of bits so that it can be stored in a file or memory buffer, or transmit
-//ted across a network connection link to be reconstructed later in the same or an
+//Serialization is the process of converting a data
+// structure or object into a sequence of bits so that it can be
+// stored in a file or memory buffer, or transmitted across a network
+// connection link to be reconstructed later in the same or an
 //other computer environment. 
 //
 // Design an algorithm to serialize and deserialize an N-ary tree. An N-ary tree
@@ -70,6 +71,8 @@ package com.songlunzhao.leetcode.editor.en;
 import com.songlunzhao.leetcode.editor.en.common.Node;
 import org.testng.annotations.Test;
 
+import java.util.*;
+
 public class SerializeAndDeserializeNAryTree_428 {
 
     
@@ -78,6 +81,12 @@ public class SerializeAndDeserializeNAryTree_428 {
     public void testSerializeAndDeserializeNAryTree(){
         Codec solution = new SerializeAndDeserializeNAryTree_428()
                         .new Codec();
+        Integer[] input = new Integer[]{
+            1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14
+        };
+
+        String data = solution.serialize(solution.buildTree());
+        System.out.println(data);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 /*
@@ -101,13 +110,78 @@ class Node {
 
 class Codec {
     // Encodes a tree to a single string.
+
+    /**
+     * dfs, comma separated number, the second number is how many children it has
+     * @param root
+     * @return
+     */
     public String serialize(Node root) {
-        return null;
+        List<String> list=new LinkedList<>();
+        serializeHelper(root,list);
+        return String.join(",",list);
     }
-	
+
+    /**
+     * dfs traversal
+     * @param root
+     * @param list
+     */
+    private void serializeHelper(Node root, List<String> list){
+        if(root==null){
+            return;
+        }else{
+            list.add(String.valueOf(root.val));
+            list.add(String.valueOf(root.children.size()));
+            for(Node child:root.children){
+                serializeHelper(child,list);
+            }
+        }
+    }
+
     // Decodes your encoded data to tree.
     public Node deserialize(String data) {
-        return null;
+        if(data.isEmpty())
+            return null;
+
+        String[] ss=data.split(",");
+        Queue<String> q=new LinkedList<>(Arrays.asList(ss));
+        return deserializeHelper(q);
+    }
+
+    /**
+     * dfs deserialize
+     * @param q
+     * @return
+     */
+    private Node deserializeHelper(Queue<String> q){
+        Node root=new Node();
+        root.val=Integer.parseInt(q.poll());
+        int size=Integer.parseInt(q.poll());
+        root.children=new ArrayList<Node>(size);
+        for(int i=0;i<size;i++){
+            root.children.add(deserializeHelper(q));
+        }
+        return root;
+    }
+
+    public Node buildTree() {
+        // [1,null,3,2,4,null,5,6]
+        Node node1=new Node(1);
+        node1.children=new ArrayList<>();
+        Node node3=new Node(3);
+        Node node2=new Node(2);
+        Node node4=new Node(4);
+        node1.children.add(node3);
+        node1.children.add(node2);
+        node1.children.add(node4);
+        Node node5=new Node(5);
+        Node node6=new Node(6);
+        node3.children=new ArrayList<>();
+        node3.children.add(node5);
+        node3.children.add(node6);
+
+        return node1;
     }
 }
 

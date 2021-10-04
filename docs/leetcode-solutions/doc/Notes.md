@@ -55,6 +55,9 @@ Race condition -- both threads are "racing" to access/change the data.
 redis in memory db, hazelcast, what is pre-cache service
 https://www.javacodegeeks.com/2019/02/nosql-databases-cassandra-vs-mongo-vs-redis-db-comparison.html
 rabbitmq vs kafka vs redis
+##distributed file storage
+1. HDFS
+2. Amanzon S3 - Simple Storage Service
 ##consistent hashing
 1. hash record keys to a integer range, for example (0, power(2,32)-1), that is 0 to the largest integer;
 2. place these integers on a ring.
