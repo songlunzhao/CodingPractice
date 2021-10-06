@@ -89,7 +89,7 @@ class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
 //        preorderTraversal(root, ans);
-        preorderTraversal(root,ans);
+        preorderTraversalQueue(root,ans);
         return ans;
     }
 

@@ -1,9 +1,10 @@
-//You need to construct a binary tree from a string consisting of parenthesis an
-//d integers. 
+//You need to construct a binary tree from a string
+// consisting of parenthesis and integers.
 //
-// The whole input represents a binary tree. It contains an integer followed by 
-//zero, one or two pairs of parenthesis. The integer represents the root's value a
-//nd a pair of parenthesis contains a child binary tree with the same structure. 
+// The whole input represents a binary tree.
+// It contains an integer followed by zero, one or two pairs of parenthesis.
+// The integer represents the root's value and a pair of parenthesis
+// contains a child binary tree with the same structure.
 //
 // You always start to construct the left child node of the parent first if it e
 //xists. 
@@ -45,6 +46,8 @@ package com.songlunzhao.leetcode.editor.en;
 import com.songlunzhao.leetcode.editor.en.common.TreeNode;
 import org.testng.annotations.Test;
 
+import java.util.Stack;
+
 public class ConstructBinaryTreeFromString_536 {
 
     
@@ -53,6 +56,7 @@ public class ConstructBinaryTreeFromString_536 {
     public void testConstructBinaryTreeFromString(){
        Solution solution = new ConstructBinaryTreeFromString_536()
                         .new Solution();
+        String s = "-4(2(3(8)(9))(1))(6(5)(7))";
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 /**
@@ -72,8 +76,30 @@ public class ConstructBinaryTreeFromString_536 {
  */
 class Solution {
     public TreeNode str2tree(String s) {
-        return null;
+        Stack<TreeNode> stack = new Stack<>();
+        for(int i = 0, j = i; i < s.length(); i++, j = i){
+            char c = s.charAt(i);
+            if(c == ')')    stack.pop();//if no children, pop currentNode
+            else if(c >= '0' && c <= '9' || c == '-'){
+                //create current node with current value
+                while(i + 1 < s.length() && s.charAt(i + 1) >= '0' && s.charAt(i + 1) <= '9') i++;
+                TreeNode currentNode = new TreeNode(Integer.valueOf(s.substring(j, i + 1)));
+
+                //if has parent node, link current node to parent
+                //assume always has left before has right child
+                if(!stack.isEmpty()){
+                    TreeNode parent = stack.peek();
+                    if(parent.left != null)    parent.right = currentNode;
+                    else parent.left = currentNode;
+                }
+                //push current node to stack
+                stack.push(currentNode);
+            }
+        }
+        return stack.isEmpty() ? null : stack.peek();
     }
+
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
