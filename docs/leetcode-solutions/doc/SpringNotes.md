@@ -44,3 +44,6 @@
         SmartContextLoader 
         https://www.baeldung.com/java-restart-spring-boot-app
         https://stackoverflow.com/questions/48570314/how-to-switch-spring-profile-at-runtime
+        
+# Spring concurrency - ThreadPoolTaskExecutor
+https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/scheduling.html        

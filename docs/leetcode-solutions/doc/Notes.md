@@ -48,6 +48,30 @@ refreshing their news feed are interesting to monitor.
 # Java multi-threading -- need work
 
 Race condition -- both threads are "racing" to access/change the data.
+Dead lock -- both thread wait for another thread for some resources
+ Volatile variable --
+ If you mark any variable as volatile, 
+ then all the threads can read its value directly from the main memory rather than CPU cache, so that each thread can get an updated value of the variable
+Thread starvation -- 
+is basically a situation or condition where a thread won’t be able to 
+have regular access to shared resources and therefore is unable to 
+proceed or make progress. 
+This is because other threads have high priority and 
+occupy the resources for too long.
+Live lock --
+Similar to deadlock, livelock is also another concurrency problem. 
+In this case, the state of threads changes between one another without 
+making any progress. Threads are not blocked but their execution is stopped 
+due to the unavailability of resources.
+ Context switching --
+ It allows multiple processes to share the same CPU. In context switching, 
+ the state of thread or process is stored so that the execution of 
+ the thread can be resumed later if required.
+ ThreadLocal -- 
+ variables are special kinds of variables created and provided by the 
+ Java ThreadLocal class. These variables are only allowed to be 
+ read and written by the same thread. 
+  
 
 # relational db and non-relational db -- pros & cons
 
